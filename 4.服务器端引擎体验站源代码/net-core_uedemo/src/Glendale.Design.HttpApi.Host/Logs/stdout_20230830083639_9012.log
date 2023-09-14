@@ -1,0 +1,195 @@
+[16:36:52 INF] Starting Glendale.Design.HttpApi.Host.
+[16:36:55 INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[16:36:56 INF] Loaded ABP modules:
+[16:36:56 INF] - Glendale.Design.DesignHttpApiHostModule
+[16:36:56 INF]   - Glendale.Design.DesignHttpApiModule
+[16:36:56 INF]     - Glendale.Design.DesignApplicationContractsModule
+[16:36:56 INF]       - Glendale.Design.DesignDomainSharedModule
+[16:36:56 INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+[16:36:56 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+[16:36:56 INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+[16:36:56 INF]           - Volo.Abp.Validation.AbpValidationModule
+[16:36:56 INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+[16:36:56 INF]             - Volo.Abp.Localization.AbpLocalizationModule
+[16:36:56 INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+[16:36:56 INF]               - Volo.Abp.Settings.AbpSettingsModule
+[16:36:56 INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+[16:36:56 INF]                 - Volo.Abp.Security.AbpSecurityModule
+[16:36:56 INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+[16:36:56 INF]                   - Volo.Abp.Data.AbpDataModule
+[16:36:56 INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+[16:36:56 INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+[16:36:56 INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+[16:36:56 INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+[16:36:56 INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+[16:36:56 INF]           - Volo.Abp.Features.AbpFeaturesModule
+[16:36:56 INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+[16:36:56 INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+[16:36:56 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+[16:36:56 INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+[16:36:56 INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+[16:36:56 INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+[16:36:56 INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+[16:36:56 INF]             - Volo.Abp.EventBus.AbpEventBusModule
+[16:36:56 INF]               - Volo.Abp.Json.AbpJsonModule
+[16:36:56 INF]                 - Volo.Abp.Timing.AbpTimingModule
+[16:36:56 INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+[16:36:56 INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+[16:36:56 INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+[16:36:56 INF]               - Volo.Abp.Auditing.AbpAuditingModule
+[16:36:56 INF]                 - Volo.Abp.Threading.AbpThreadingModule
+[16:36:56 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+[16:36:56 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+[16:36:56 INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+[16:36:56 INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+[16:36:56 INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+[16:36:56 INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+[16:36:56 INF]             - Volo.Abp.Http.AbpHttpModule
+[16:36:56 INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+[16:36:56 INF]               - Volo.Abp.Minify.AbpMinifyModule
+[16:36:56 INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+[16:36:56 INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+[16:36:56 INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+[16:36:56 INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+[16:36:56 INF]             - Volo.Abp.UI.AbpUiModule
+[16:36:56 INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+[16:36:56 INF]           - Volo.Abp.Application.AbpDddApplicationModule
+[16:36:56 INF]             - Volo.Abp.Domain.AbpDddDomainModule
+[16:36:56 INF]               - Volo.Abp.Guids.AbpGuidsModule
+[16:36:56 INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+[16:36:56 INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+[16:36:56 INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+[16:36:56 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+[16:36:56 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+[16:36:56 INF]   - Glendale.Design.DesignApplicationModule
+[16:36:56 INF]     - Glendale.Design.DesignDomainModule
+[16:36:56 INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+[16:36:56 INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+[16:36:56 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+[16:36:56 INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+[16:36:56 INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+[16:36:56 INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+[16:36:56 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+[16:36:56 INF]         - Volo.Abp.Caching.AbpCachingModule
+[16:36:56 INF]           - Volo.Abp.Serialization.AbpSerializationModule
+[16:36:56 INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+[16:36:56 INF]         - Volo.Abp.Users.AbpUsersDomainModule
+[16:36:56 INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+[16:36:56 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+[16:36:56 INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+[16:36:56 INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+[16:36:56 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+[16:36:56 INF]       - Volo.Abp.BlobStoring.AbpBlobStoringModule
+[16:36:56 INF]       - Volo.Abp.Emailing.AbpEmailingModule
+[16:36:56 INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+[16:36:56 INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+[16:36:56 INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+[16:36:56 INF]     - Glendale.Design.DesignCoreModule
+[16:36:56 INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+[16:36:56 INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+[16:36:56 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+[16:36:56 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+[16:36:56 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+[16:36:56 INF]   - Glendale.Design.EntityFrameworkCore.DesignEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+[16:36:56 INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+[16:36:56 INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+[16:36:56 INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+[16:36:56 INF]   - Glendale.Design.EntityFrameworkCore.DesignModelEntityFrameworkCoreModule
+[16:36:56 INF]   - Volo.Abp.Autofac.AbpAutofacModule
+[16:36:56 INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+[16:36:56 INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+[16:36:56 INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+[16:36:56 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+[16:36:56 INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+[16:36:56 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+[16:36:56 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+[16:36:56 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+[16:36:56 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+[16:36:56 INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+[16:36:56 INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+[16:36:56 INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+[16:36:56 INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+[16:36:56 INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+[16:36:56 INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+[16:36:56 INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+[16:36:56 INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+[16:36:56 INF]   - Volo.Abp.BlobStoring.FileSystem.AbpBlobStoringFileSystemModule
+[16:36:56 DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+[16:36:56 DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+[16:36:56 DBG] Started background worker: Glendale.Design.Jobs.ModelStateCheckerWorker
+[16:36:56 DBG] Started background worker: Glendale.Design.Jobs.CADStateCheckerWorker
+[16:36:56 INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+[16:36:57 INF] Using the default authentication scheme Identity.Application for IdentityServer
+[16:36:57 DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+[16:36:57 DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+[16:36:57 DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+[16:36:57 DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+[16:36:57 DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+[16:36:57 DBG] sharding core starting......
+[16:36:57 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  start init......
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+      FROM information_schema.tables
+      WHERE table_type = 'BASE TABLE' AND table_schema = 'ueDemoData_Model'
+[16:36:59 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineFlatten'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'Document' has a global query filter defined and is the required end of a relationship with the entity 'DocumentLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'DocumentVersion' has a global query filter defined and is the required end of a relationship with the entity 'DocumentVerThan'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'Message' has a global query filter defined and is the required end of a relationship with the entity 'MessageReceive'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolder'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'IdentityUser' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolderUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:36:59 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:37:00 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  complete init
+[16:37:00 INF] Initialized all ABP modules.
+[16:37:00 INF] Application started. Press Ctrl+C to shut down.
+[16:37:00 INF] Hosting environment: Development
+[16:37:00 INF] Content root path: D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.HttpApi.Host
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/ - -
+[16:37:00 DBG] Login Url: /Account/Login
+[16:37:00 DBG] Login Return Url Parameter: ReturnUrl
+[16:37:00 DBG] Logout Url: /Account/Logout
+[16:37:00 DBG] ConsentUrl Url: /Consent
+[16:37:00 DBG] Consent Return Url Parameter: returnUrl
+[16:37:00 DBG] Error Url: /Account/Error
+[16:37:00 DBG] Error Id Parameter: errorId
+[16:37:00 INF] Executing endpoint 'Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host)'
+[16:37:00 INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Glendale.Design.Controllers.HomeController (Glendale.Design.HttpApi.Host).
+[16:37:00 INF] Executing RedirectResult, redirecting to /swagger.
+[16:37:00 INF] Executed action Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host) in 17.8916ms
+[16:37:00 INF] Executed endpoint 'Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host)'
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger - -
+[16:37:00 INF] Request finished HTTP/2 GET https://localhost:44310/ - - - 302 - - 644.3263ms
+[16:37:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger - - - 301 - - 7.3239ms
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/index.html - -
+[16:37:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/index.html - - - 200 - text/html;charset=utf-8 54.4958ms
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/ui/abp.js - -
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/swagger-ui.css - -
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/swagger-ui-bundle.js - -
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/ui/abp.swagger.js - -
+[16:37:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/swagger-ui-standalone-preset.js - -
+[16:37:00 INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+[16:37:00 INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+[16:37:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/ui/abp.js - - - 200 3025 application/javascript 7.5758ms
+[16:37:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/ui/abp.swagger.js - - - 200 1026 application/javascript 6.7346ms
+[16:37:00 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[16:37:00 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[16:37:00 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[16:37:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/swagger-ui.css - - - 200 143410 text/css 30.9506ms
+[16:37:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 37.8309ms
+[16:37:01 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/swagger-ui-bundle.js - - - 200 1097461 application/javascript 65.4117ms
+[16:37:01 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/v1/swagger.json - -
+[16:37:01 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 622.5644ms
+[16:37:20 DBG] Stopped background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+[16:37:20 DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+[16:37:20 DBG] Stopped background worker: Glendale.Design.Jobs.ModelStateCheckerWorker
+[16:37:20 DBG] Stopped background worker: Glendale.Design.Jobs.CADStateCheckerWorker
+[16:37:20 INF] Application is shutting down...

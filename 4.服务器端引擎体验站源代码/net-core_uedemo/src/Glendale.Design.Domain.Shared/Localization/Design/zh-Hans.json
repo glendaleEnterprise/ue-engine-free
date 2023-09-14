@@ -1,0 +1,85 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "Menu:Home": "首页",
+    "Welcome": "欢迎",
+    "LongWelcomeMessage": "欢迎来到该应用程序. 这是一个基于ABP框架的启动项目. 有关更多信息, 请访问 abp.io.",
+    "Design.ExceedsTheMaximumSize": "文件超过最大上传大小（{0}kb）！",
+    "Design.NotValidFormat": "无效的文件格式（支持格式{0}）！",
+    "DisplayName:Design.File.AllowedMaxFileSize": "允许最大文件大小（{0}kb）！",
+    "DisplayName:Design.File.AllowedUploadFormats": "允许上传格式（支持格式{0}）！",
+
+    "Permission:Design.Base": "基本功能",
+    "Permission:Design.Base.Postil": "工作台",
+    "Permission:Design.Base.Postil.Close": "问题关闭",
+    "Permission:Design.Base.Postil.Handle": "问题处理",
+    "Permission:Design.Base.Postil.Delete": "问题删除",
+
+    "Permission:Design.Base.Projects": "项目列表",
+    "Permission:Design.Base.Projects.Add": "创建项目",
+    "Permission:Design.Base.Projects.Update": "变更项目",
+    "Permission:Design.Base.Projects.Delete": "删除项目",
+    "Permission:Design.Base.Projects.Search": "项目查询",
+
+
+
+    "Permission:Design.Business": "业务管理",
+    "Permission:Design.Business.Home": "项目首页",
+    "Permission:Design.Business.Folder": "专业策划",
+    "Permission:Design.Business.Folder.Add": "添加策划",
+    "Permission:Design.Business.Folder.Update": "修改策划",
+    "Permission:Design.Business.Folder.Delete": "删除策划",
+    "Permission:Design.Business.Folder.Search": "查询策划",
+    "Permission:Design.Business.FolderUser.Add": "添加策划人员",
+    "Permission:Design.Business.FolderUser.Delete": "删除策划人员",
+
+    "Permission:Design.Business.Documents": "模型列表",
+    "Permission:Design.Business.Documents.Search": "模型查询",
+    "Permission:Design.Business.Documents.Share": "模型分享",
+    "Permission:Design.Business.Documents.Upload": "上传模型",
+    "Permission:Design.Business.Documents.UploadNewVersion": "上传新版模型",
+    "Permission:Design.Business.Documents.Move": "移动模型",
+    "Permission:Design.Business.Documents.Delete": "删除模型",
+    "Permission:Design.Business.Documents.Public": "设置公开/私有",
+    "Permission:Design.Business.Documents.Version": "版本管理",
+    "Permission:Design.Business.Documents.VersionThan": "版本比较",
+    "Permission:Design.Business.Documents.VersionDelete": "删除版本",
+    "Permission:Design.Business.Documents.Download": "模型下载",
+    "Permission:Design.Business.Viewpoint.Add": "创建视点",
+    "Permission:Design.Business.Label.Add": "创建标签",
+
+
+    "Permission:Design.Business.Combine": "合模列表",
+    "Permission:Design.Business.Combine.Search": "合模查询",
+    "Permission:Design.Business.Combine.Add": "新建合模",
+    "Permission:Design.Business.Combine.SetGIS": "设置GIS",
+    "Permission:Design.Business.Combine.Share": "合模分享",
+    "Permission:Design.Business.Combine.Move": "合模移动",
+    "Permission:Design.Business.Combine.Delete": "合模删除",
+    "Permission:Design.Business.Combine.Public": "设置合模公开/私有",
+
+
+    "Permission:Design.Business.Share": "分享管理",
+    "Permission:Design.Business.Share.Add": "模型分享",
+    "Permission:Design.Business.Share.Delete": "删除分享",
+    "Permission:Design.Business.Share.Info": "查看分享",
+    "Permission:Design.Business.Share.Search": "查询分享",
+
+
+    "Permission:Design.Business.Postil": "问题查询",
+    "Permission:Design.Business.Postil.Add": "新建批注",
+    "Permission:Design.Business.Postil.Info": "问题详情",
+    "Permission:Design.Business.Postil.Search": "问题查询",
+    "Permission:Design.Business.Postil.Export": "问题导出",
+
+
+
+    "Permission:Design.System": "基础设置",
+    "Permission:Design.System.Users": "用户管理",
+    "Permission:Design.System.Roles": "角色管理",
+    "Permission:Design.System.OrganizationUnits": "组织机构",
+    "Permission:Design.System.Dictionary": "基础数据",
+    "Permission:Design.System.LogData": "系统日志"
+
+  }
+}

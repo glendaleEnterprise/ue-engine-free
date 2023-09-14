@@ -1,0 +1,13 @@
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\bin\Debug\netstandard2.0\Glendale.Design.Application.Contracts.deps.json
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\bin\Debug\netstandard2.0\Glendale.Design.Application.Contracts.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\bin\Debug\netstandard2.0\Glendale.Design.Application.Contracts.pdb
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\bin\Debug\netstandard2.0\Glendale.Design.Domain.Shared.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\bin\Debug\netstandard2.0\Glendale.Design.Domain.Shared.pdb
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.csproj.AssemblyReference.cache
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.AssemblyInfoInputs.cache
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.AssemblyInfo.cs
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.csproj.CopyComplete
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Application.Contracts\obj\Debug\netstandard2.0\Glendale.Design.Application.Contracts.pdb

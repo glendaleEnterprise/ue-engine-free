@@ -1,0 +1,14 @@
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\Glendale.Design.DbMigrator.pdb
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\appsettings.json
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\appsettings.secrets.json
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\clrcompression.dll
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\clrjit.dll
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\coreclr.dll
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\mscordaccore.dll
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\aspnetcorev2_inprocess.dll
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\Glendale.Design.Application.Contracts.pdb
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\Glendale.Design.EntityFrameworkCore.pdb
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\Glendale.Design.Core.pdb
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\Glendale.Design.Domain.pdb
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\Glendale.Design.Domain.Shared.pdb
+D:\最新版一键安装包\github\服务端渲染引擎\CustomerDemo\CustomerDemoDB\Glendale.Design.DbMigrator.exe

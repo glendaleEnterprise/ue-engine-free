@@ -1,0 +1,1490 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Glendale.Design.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Glendale.Design.Jobs.CADStateCheckerWorker">
+            <summary>
+            CAD状态检查
+            </summary>
+        </member>
+        <member name="T:Glendale.Design.Jobs.ModelFileOption">
+            <summary>
+            模型文件上传配置
+            </summary>
+        </member>
+        <member name="P:Glendale.Design.Jobs.ModelFileOption.Url">
+            <summary>
+            模型文件上传地址
+            </summary>
+        </member>
+        <member name="P:Glendale.Design.Jobs.ModelFileOption.Token">
+            <summary>
+            模型文件上传 Token
+            </summary>
+        </member>
+        <member name="T:Glendale.Design.Jobs.ModelStateCheckerWorker">
+            <summary>
+            模型状态检查
+            </summary>
+        </member>
+        <member name="P:Glendale.Design.Jobs.WordUploadAags.DirPath">
+            <summary>
+            目标文件夹路径
+            </summary>
+        </member>
+        <member name="P:Glendale.Design.Jobs.WordUploadAags.FilePath">
+            <summary>
+            文件完整路径
+            </summary>
+        </member>
+        <member name="T:Glendale.Design.PasswordGrantValidator">
+            <summary>
+            重写密码登录，补充登录前校验
+            </summary>
+        </member>
+        <member name="T:Glendale.Design.PhoneGrantValidator">
+            <summary>
+            扩展手机验证码登录
+            </summary>
+        </member>
+        <member name="T:Glendale.Design.Services.AccountProfileAppService">
+            <summary>
+            
+            </summary>   
+        </member>
+        <member name="M:Glendale.Design.Services.AccountProfileAppService.GetAsync">
+            <summary>
+            获取登录用户信息(角色、权限、菜单)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.CombineFlattenAppService">
+            <summary>
+            合摸压平接口
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineFlattenAppService.CreateAsync(Glendale.Design.Dtos.Combine.CreateCombineFlattenDto)">
+            <summary>
+            创建
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineFlattenAppService.UpdateAsync(System.Guid,Glendale.Design.Dtos.Combine.CreateCombineFlattenDto)">
+            <summary>
+            更新
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineFlattenAppService.GetListAsync(Glendale.Design.Dtos.Combine.GetListCombineFlattenInput)">
+            <summary>
+            查询【带分页】
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineFlattenAppService.GetAllListAsync(System.Guid,System.String)">
+            <summary>
+            查询【不带分页】
+            </summary>
+            <param name="CombineId"></param>
+            <param name="FlattenName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineFlattenAppService.GetAsync(System.Guid)">
+            <summary>
+            获取对象
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.CombineService">
+            <summary>
+            合摸接口
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.CreateAsync(Glendale.Design.Dtos.Combine.CombineCreateUpdateDto)">
+            <summary>
+            创建合模表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.UpdateAsync(System.Guid,Glendale.Design.Dtos.Combine.CombineCreateUpdateDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.UpdateBlobNameAsync(System.Guid,System.String)">
+            <summary>
+            更新预览图
+            </summary>
+            <param name="id">合模数据标识</param>
+            <param name="BlobName">预览图编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.UpdateCameraAsync(System.Guid,System.String)">
+            <summary>
+            更新模型主视角
+            </summary>
+            <param name="id">合模数据标识</param>
+            <param name="Camera">模型主视角</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.UpdateSceneConfigAsync(System.Guid,System.String)">
+            <summary>
+            更新合模信息
+            </summary>
+            <param name="id">数据标识</param>
+            <param name="SceneConfig">模型场景配置修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.UpdateModelConfigAsync(System.Guid,System.Guid,System.String)">
+            <summary>
+            更新模型信息
+            </summary>
+            <param name="id">数据标识</param>
+            <param name="ModelConfig">模型配置修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.UpdateMatrixAsync(System.Guid,System.Guid,System.String)">
+            <summary>
+            更新模型位置信息
+            </summary>
+            <param name="id">数据标识</param>
+            <param name="Matrix">模型位置修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.GetListAsync(Glendale.Design.Dtos.Combine.GetListCombineInput)">
+            <summary>
+            合模查询【带分页】
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.GetDocument(System.Guid)">
+            <summary>
+            用来查询合模的模型信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.GetAllListAsync(System.Nullable{System.Guid},System.String)">
+            <summary>
+            合模查询【不带分页】
+            </summary>
+            <param name="projectId"></param>
+            <param name="combineName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.GetAsync(System.Guid)">
+            <summary>
+            获取合模对象
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.HasCombine(System.Guid)">
+            <summary>
+            查询模型已经被合过的 合模集合
+            </summary>
+            <param name="docId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.CombineService.SetOpen(System.Guid[],System.Boolean)">
+            <summary>
+            设置公开/私有
+            </summary>
+            <param name="ids"></param>
+            <param name="isOpen"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.DictionaryService">
+            <summary>
+            基础数据
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.DictionaryService.GetAllListAsync">
+            <summary>
+            获取全部
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentConfigService.CreateAsync(Glendale.Design.Dtos.DocumentConfig.DocumentConfigCreateUpdateDto)">
+            <summary>
+            新增
+            </summary>
+            <param name="input"></param>
+            <returns></returns>        
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentConfigService.UpdateAsync(System.Guid,Glendale.Design.Dtos.DocumentConfig.DocumentConfigCreateUpdateDto)">
+            <summary>
+            更新
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentConfigService.GetListAsync(Glendale.Design.Dtos.DocumentConfig.DocumentConfigInput)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentConfigService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentConfigService.GetAsync(System.Guid)">
+            <summary>
+            根据Id查询
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.DocumentHandleAppService">
+            <summary>
+            文档文件上传接口
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.GetQueryModelInfoAsync">
+            <summary>
+            模型查询轻量化状态
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.GetQueryCADInfoAsync">
+            <summary>
+            查询CAD轻量化状态
+            </summary>        
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.GetSyncDBToDatabaseAsync(System.String,Glendale.Design.Enums.DocTypeEnum)">
+            <summary>
+            同步数据库文件
+            </summary>
+            <param name="lightweightName"></param>
+            <param name="docType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.BreakpointContinuationAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            文件上传-续传
+            </summary>
+            <param name="chunk"></param>
+            <param name="parentId"></param>
+            <param name="fileName"></param>
+            <param name="index"></param>
+            <param name="hashName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.MergeAsync(System.String,System.String,System.String,System.String,System.Guid,System.Guid,System.Int32,Glendale.Design.Enums.OpenStatusEnum,System.String,System.Boolean,System.String)">
+            <summary>
+            文件上传-合并
+            </summary>
+            <param name="hashName"></param>
+            <param name="parentId"></param>
+            <param name="fileName"></param>
+            <param name="suffixName"></param>
+            <param name="id"></param>
+            <param name="projectId"></param>
+            <param name="fileSize"></param>
+            <param name="openStatus"></param>
+            <param name="userId"></param>
+            <param name="isCurrent"></param>
+            <param name="remark">新版说明</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.CreateUploadModelAsync(System.String,System.String,System.Int32,System.Guid,Glendale.Design.Enums.OpenStatusEnum,System.Boolean,Glendale.Design.Enums.DocTypeEnum,System.String)">
+            <summary>
+            模型文件上传
+            </summary>
+            <param name="lightweightName"></param>
+            <param name="fileName"></param>
+            <param name="fileSize"></param>       
+            <param name="id"></param>
+            <param name="openStatus"></param>      
+            <param name="isCurrent"></param>
+            <param name="docType"></param>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.GetDownloadFileSize(System.String)">
+            <summary>
+            获取下载文件大小
+            </summary>
+            <param name="fileName">带扩展名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.CreateDownloadFilesAsync(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            下载资料
+            </summary>
+            <param name="fileName"></param>
+            <param name="leftPosition"></param>
+            <param name="rightPosition"></param>
+            <param name="sectionSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentHandleAppService.CreateUploadBimOrCadAsync(System.Guid,System.String,System.String,System.String,System.Int32,System.String,System.Boolean,System.String)">
+            <summary>
+            模型/cad上传新版本
+            </summary>
+            <param name="docId"></param>
+            <param name="lightweightName"></param>
+            <param name="userId"></param>
+            <param name="fileName"></param>
+            <param name="fileSize"></param>
+            <param name="isCurrent"></param>
+            <param name="remark">新版说明</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentLogService.GetAllByDocidAsync(System.Guid)">
+            <summary>
+            获取全部的日志
+            </summary>
+            <param name="docId">文档id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentLogService.CreateLog(System.Guid,System.Int32)">
+            <summary>
+            新增文档日志
+            </summary>
+            <param name="docId"></param>
+            <param name="logType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.CreateAsync(Glendale.Design.Dtos.Document.DocumentCreateUpdateDto)">
+            <summary>
+            上传新模型
+            </summary>
+            <param name="input"></param>
+            <returns></returns>        
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdateAsync(System.Guid,Glendale.Design.Dtos.Document.DocumentCreateUpdateDto)">
+            <summary>
+            更新
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdateBlobNameAsync(System.Guid,System.String)">
+            <summary>
+            更新预览图
+            </summary>
+            <param name="id">合模数据标识</param>
+            <param name="BlobName">预览图编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdateCameraAsync(System.Guid,System.String)">
+            <summary>
+            更新模型信息
+            </summary>
+            <param name="id">合模数据标识</param>
+            <param name="Camera">模型主视角</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdateSceneConfigAsync(System.Guid,System.String)">
+            <summary>
+            更新模型信息
+            </summary>
+            <param name="id">数据标识</param>
+            <param name="SceneConfig">模型场景配置修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdateModelConfigAsync(System.Guid,System.String)">
+            <summary>
+            更新模型信息
+            </summary>
+            <param name="id">数据标识</param>
+            <param name="ModelConfig">模型配置修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdateMatrixAsync(System.Guid,System.String)">
+            <summary>
+            更新模型位置信息
+            </summary>
+            <param name="id">数据标识</param>
+            <param name="Matrix">模型位置修改</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput)">
+            <summary>
+            分页查询文件列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.Mdelete(System.Guid[])">
+            <summary>
+            删除多个
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.GetAsync(System.Guid)">
+            <summary>
+            根据Id查询
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.GetArrayAsync(System.Guid[])">
+            <summary>
+            查询多个
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdateMoveAsync(System.Guid,System.Guid[])">
+            <summary>
+            移动文件目录
+            </summary>
+            <param name="folderId"></param>
+            <param name="documentIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.UpdatePublicAsync(System.Boolean,System.Guid[])">
+            <summary>
+            公开文件
+            </summary>
+            <param name="isPublic"></param>
+            <param name="documentIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.GetWordHtmlAsync(System.String,System.Nullable{System.Int32})">
+            <summary>
+            word转Html
+            </summary>
+            <param name="blobName">带扩展名，如：602ace13-7336-4a48-b1f9-d7f7d7259572.docx</param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.GetExcelHtmlAsync(System.String)">
+            <summary>
+            Excel转Html
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.GetNumOfEachFormat(System.Guid)">
+            <summary>
+            查询每种图模格式的数量以及上传人的统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentService.PakCallBack(Glendale.Design.Services.Paramentrs)">
+            <summary>
+            获取当前用户在该目录权限
+            如果当前目录未设置权限，从上一级目录继承（以此类推，直到根目录）
+            </summary>
+            <param name="projectId">项目Id</param>
+            <param name="folderId">目录Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.GetModelNamesAsync">
+            <summary>
+            获取全部模型名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.CreateAsync(Glendale.Design.Dtos.DocumentVer.DocumentVersionCreateUpdateDto)">
+            <summary>
+            上传新版本
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.GetListAsync(Glendale.Design.Dtos.DocumentVer.GetListDocumentVersionInput)">
+            <summary>
+            查询模型版本【带分页】
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.SetCurrent(System.Guid)">
+            <summary>
+            设置版本
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.SyncModelName(System.Guid,System.String)">
+            <summary>
+            同步轻量化名称
+            </summary>
+            <param name="id"></param>
+            <param name="modelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.SyncModelStatus(System.Guid,Glendale.Design.Enums.DocStatusEnum,System.String)">
+            <summary>
+            同步轻量化状态
+            </summary>
+            <param name="id"></param>
+            <param name="status"></param>
+            <param name="statusDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.GetLightweightModelAsync">
+            <summary>
+            获取待轻量化BIM文件(获取三十天内的数据)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVersionService.GetLightweightCADAsync">
+            <summary>
+            获取待轻量化CAD文件(获取三十天内的数据)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVerThanService.CreateAsync(Glendale.Design.Dtos.DocumentVerThan.DocumentVerThanCreateUpdateDto)">
+            <summary>
+            新增
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVerThanService.GetEntity(System.Guid,System.Guid)">
+            <summary>
+            获取对象
+            </summary>
+            <param name="sourceId"></param>
+            <param name="destinationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVerThanService.GetAsync(System.Guid)">
+            <summary>
+            获取对象
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVerThanService.GetListAsync(Glendale.Design.Dtos.DocumentVerThan.GetListDocumentVerThanInput)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVerThanService.StartThan(System.Guid,System.String,System.String)">
+            <summary>
+            开始比对
+            </summary>
+            <param name="id">比对表主键Id</param>
+            <param name="glid">旧版图层glid</param>
+            <param name="newglid">新版图层glid</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVerThanService.GetExternalIdList(System.String[],System.String,System.String)">
+            <summary>
+            计算update构件Id
+            </summary>
+            <param name="someIds">两个版本都存在的构件Id</param>
+            <param name="modelNameSource"></param>
+            <param name="modelNameDestination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.DocumentVerThanService.MetadataSave(System.Guid,System.Int32,Glendale.Design.Dtos.DocumentVerThan.MetadataCreateDto)">
+            <summary>
+            保存构件变更
+            </summary>
+            <param name="id">比对表主键Id</param>
+            <param name="method">1=新增 2=修改 3=删除</param>
+            <param name="metadata">构件列表(Guid=旧版plid#新版plid))</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.FileAppService.GetAsync(System.String)">
+            <summary>
+            获取文件流
+            </summary>
+            <param name="blobName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.FileAppService.CreateAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.FileAppService.BreakpointContinuationAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            文件上传-续传并自动完成合并
+            </summary>
+            <param name="file"></param>      
+            <param name="fileName"></param>
+            <param name="hashName"></param>
+            <param name="chunks"></param>
+            <param name="chunk"></param>
+            <returns></returns>       
+        </member>
+        <member name="M:Glendale.Design.Services.FileAppService.GetWordHtmlAsync(System.String,System.Nullable{System.Int32})">
+            <summary>
+            word转Html
+            </summary>
+            <param name="fileName">带扩展名，如：602ace13-7336-4a48-b1f9-d7f7d7259572.docx</param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.FileAppService.GetExcelHtmlAsync(System.String)">
+            <summary>
+            Excel转Html
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.LabelService.CreateAsync(Glendale.Design.Dtos.Label.LabelCreateUpdateDto)">
+            <summary>
+            新增
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.LabelService.GetListAsync(Glendale.Design.Dtos.Label.LabelInput)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.LabelService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.LabelService.BreakpointContinuationAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.Int32,System.String)">
+            <summary>
+            文件上传-续传
+            </summary>
+            <param name="chunk"></param>      
+            <param name="fileName"></param>
+            <param name="index"></param>
+            <param name="hashName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.LabelService.MergeAsync(System.String,System.String,System.Int32,System.Guid,System.String,Glendale.Design.Enums.SceneTypeEnum,System.String)">
+            <summary>
+            文件上传-合并
+            </summary>
+            <param name="hashName"></param>        
+            <param name="fileName"></param>        
+            <param name="projectId"></param>
+            <param name="fileSize"></param> 
+            <param name="modelId"></param>
+            <param name="labelType"></param>
+            <param name="position"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.CreateAsync(Glendale.Design.Dtos.Message.MessageCreateUpdateDto)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.DeleteAsync(System.Guid)">
+            <summary>
+            删除消息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.UserAllRead">
+            <summary>
+            用户全部阅读
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.Read(System.Guid)">
+            <summary>
+            阅读消息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.GetListAsync(Glendale.Design.Dtos.Message.GetListMessageInput)">
+            <summary>
+            所有消息列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>        
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.GetMineList(Glendale.Design.Dtos.Message.GetListMessageInput)">
+            <summary>
+            我的消息列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.GetMineCount(Glendale.Design.Dtos.Message.GetListMessageInput)">
+            <summary>
+            我的消息列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.MessageService.GetNoReadCount">
+            <summary>
+            未读消息数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelDrawingService.GetListType(System.String)">
+            <summary>
+            获取图纸类型
+            </summary>
+            <param name="modelName">模型名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelDrawingService.GetListDrawing(System.String,System.String)">
+            <summary>
+            获取图纸列表
+            </summary>
+            <param name="modelName">模型名称</param>
+            <param name="type">视图类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelDrawingService.GetListDrawingRvtId(System.String,System.String)">
+            <summary>
+            获取图纸对应的构件
+            </summary>
+            <param name="modelName"></param>
+            <param name="drawGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ModelPropertyAppService">
+            <summary>
+            模型属性表
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelPropertyAppService.GetModelProperty(System.String,System.String)">
+            <summary>
+            获取构件所有属性
+            </summary>
+            <param name="externalId">组件id</param>
+            <param name="modelName">模型名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ModelPropertySpaceAppService">
+            <summary>
+            模型属性表
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelPropertySpaceAppService.GetModelPropertySpace(System.String,System.String)">
+            <summary>
+            获取构件所有属性
+            </summary>
+            <param name="externalId">组件id</param>
+            <param name="modelName">模型名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ModelSpaceAppService">
+            <summary>
+            模型专业表
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelSpaceAppService.GetAll(Glendale.Design.Dtos.ModelSpace.GetListModelSpaceInput)">
+            <summary>
+            结构查询模型【不带分页】
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelSpaceAppService.GetTypeChildId(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            结构查询模型【带分页】
+            </summary>
+            <param name="modelName">模型id</param>
+            <param name="glId">主键</param>
+            <param name="pGlid">父id</param>
+            <param name="externalId">构建id</param>
+            <param name="top">多少条[默认全部]</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelSpaceAppService.GetTypeChildIdList(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            根据父id获取组件id
+            </summary>
+            <param name="modelName">模型名称</param>
+            <param name="groupName">模型组名称</param>
+            <param name="glId">主键</param>
+            <param name="pGlid">父id</param>
+            <param name="top">多少条[默认全部]</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelSpaceAppService.SelCharlistItema(System.Collections.Generic.List{Glendale.Design.Models.ModelSpace},System.Collections.Generic.List{System.String},System.Collections.Generic.List{Glendale.Design.Models.ModelSpace})">
+            <summary>
+            递归查询所有子数据的id
+            </summary>
+            <param name="all"></param>
+            <param name="arrayId">空的子数据集合</param>
+            <param name="ModelSpace">要添加的数据</param>        
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ModelTreeAppService">
+            <summary>
+            模型楼层表
+            </summary>  
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTreeAppService.GetAllListAsync(Glendale.Design.Dtos.ModelTree.GetListModelTreeInput)">
+            <summary>
+            根据条件查询，返回List
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTreeAppService.GetTreeChildId(System.String,System.String)">
+            <summary>
+            获取模型楼层所有子id
+            </summary>
+            <param name="modelName"></param>
+            <param name="glId">模型id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTreeAppService.GetTreeAsync(System.String,System.String)">
+            <summary>
+            通过轻量化名称和glid，获取模型结构树
+            </summary>
+            <param name="pid">glid</param>
+            <param name="modelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTreeAppService.GetChildrenTreeAsync(System.String,System.String)">
+            <summary>
+            通过轻量化名称和GLID，获取所有模型结构树
+            </summary>
+            <param name="modelName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTreeAppService.GetTree(System.Collections.Generic.List{Glendale.Design.Models.ModelTree},System.String,Glendale.Design.Models.ModelTree)">
+            <summary>
+            获取模型结构
+            </summary>
+            <param name="entitys"></param>
+            <param name="PGlid"></param>
+            <param name="modelTree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTreeAppService.GetPartTree(System.String,System.String[])">
+            <summary>
+            获取部分模型结构树(仅包括自身和其子级)
+            </summary>
+            <param name="modelName"></param>
+            <param name="pids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ModelTypeAppService">
+            <summary>
+            模型专业表
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTypeAppService.GetAll(Glendale.Design.Dtos.ModelType.GetListModelTypeInput)">
+            <summary>
+            结构查询模型【不带分页】
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTypeAppService.GetTypeChildId(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            结构查询模型【带分页】
+            </summary>
+            <param name="modelName">模型id</param>
+            <param name="glId">主键</param>
+            <param name="pGlid">父id</param>
+            <param name="externalId">构建id</param>
+            <param name="top">多少条[默认全部]</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTypeAppService.GetTypeChildIdList(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            根据父id获取组件id
+            </summary>
+            <param name="modelName">模型名称</param>
+            <param name="groupName">模型组名称</param>
+            <param name="glId">主键</param>
+            <param name="pGlid">父id</param>
+            <param name="top">多少条[默认全部]</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ModelTypeAppService.SelCharlistItema(System.Collections.Generic.List{Glendale.Design.Models.ModelType},System.Collections.Generic.List{System.String},System.Collections.Generic.List{Glendale.Design.Models.ModelType})">
+            <summary>
+            递归查询所有子数据的id
+            </summary>
+            <param name="all"></param>
+            <param name="arrayId">空的子数据集合</param>
+            <param name="modelType">要添加的数据</param>        
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.OrganizationUnitAppService">
+            <summary>
+            组织机构
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.OrganizationUnitAppService.GetParentAsync(System.Guid)">
+            <summary>
+            所有父节点集合
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.OrganizationUnitAppService.SetLeaf(System.Collections.Generic.List{Glendale.Design.Dtos.OrganizationUnit.OrganizationUnitListDto})">
+            <summary>
+            后面考虑处理存储leaf到数据库,避免这么进行处理
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.PostilService">
+            <summary>
+            批注
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.PostilService.GetAsync(System.Guid)">
+            <summary>
+            获取批注对象详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.PostilService.CreateAsync(Glendale.Design.Dtos.Postil.PostilCreateUpdateDto)">
+            <summary>
+            新增批注
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.PostilService.GetListAsync(Glendale.Design.Dtos.Postil.GetListPostilInput)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.PostilService.GetLaunchAsync(Glendale.Design.Dtos.Postil.GetListPostilInput)">
+            <summary>
+            分页（发起的）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.PostilService.GetHandleAsync(Glendale.Design.Dtos.Postil.GetListPostilInput)">
+            <summary>
+            分页(处理)
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.PostilService.DeleteAsync(System.Guid)">
+            <summary>
+            删除批注
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.PostilService.UpdateStatus(System.Guid,Glendale.Design.Enums.PostilStatusEnum,System.String)">
+            <summary>
+            修改状态(已处理/已关闭)
+            </summary>
+            <param name="id"></param> 
+            <param name="status">状态</param>
+            <param name="handlerRemark">说明</param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ProjectFolderService">
+            <summary>
+            项目目录接口
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.GetAsync(System.Guid)">
+            <summary>
+            获取目录,包括目录人员
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.CreateAsync(Glendale.Design.Dtos.ProjectFolder.ProjectFolderCreateDto)">
+            <summary>
+            新增目录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.CreateArryAsync(System.Guid,System.Collections.Generic.List{Glendale.Design.Dtos.ProjectFolder.ProjectFolderCreateDto})">
+            <summary>
+            新增目录列表
+            </summary>
+            <param name="ProjectID"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.UpdateAsync(System.Guid,Glendale.Design.Dtos.ProjectFolder.ProjectFolderUpdateDto)">
+            <summary>
+            更新目录
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.GetTreesAsync(System.Guid)">
+            <summary>
+            获取所有目录树(已验证)
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.GetMyTreesAsync(System.Guid)">
+            <summary>
+            我的目录树
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderService.GetAllChildrenId(System.Guid)">
+            <summary>
+            获取子节点标识
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ProjectFolderUserService">
+            <summary>
+            项目目录接口
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectFolderUserService.GetProjectUserListAsync(Glendale.Design.Dtos.ProjectFolderUser.GetListProjectFolderUserInput)">
+            <summary>
+            获取项目用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ProjectService">
+            <summary>
+            项目
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.CreateAsync(Glendale.Design.Dtos.Project.ProjectCreateDto)">
+            <summary>
+            新建项目
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.UpdateAsync(System.Guid,Glendale.Design.Dtos.Project.ProjectUpdateDto)">
+            <summary>
+            更新项目
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>      
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.GetAsync(System.Guid)">
+            <summary>
+            获取对象（已验证）
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.GetListAsync(Glendale.Design.Dtos.Project.GetListProjectInput)">
+            <summary>
+            项目列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.GetListMineJoinAsync(Glendale.Design.Dtos.Project.GetListProjectInput)">
+            <summary>
+            我参与的
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.GetListMineAllAsync(Glendale.Design.Dtos.Project.GetListProjectInput)">
+            <summary>
+            我创建的
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.GetListMineManageAsync(Glendale.Design.Dtos.Project.GetListProjectInput)">
+            <summary>
+            领导管理的项目
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.GetProjectUsers(Glendale.Design.Dtos.ProjectUser.GetListProjectUserInput)">
+            <summary>
+            查询项目人员（已弃用）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.GetProjectUserPermissionAsync(System.Guid)">
+            <summary>
+            查询登录用户的项目权限
+            </summary>
+            <param name="ProjectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ProjectService.isJoin(System.Guid)">
+            <summary>
+            判断用户是否负责项目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.RoamingService">
+            <summary>
+            漫游功能
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.RoamingService.CreateAsync(Glendale.Design.Dtos.Roaming.RoamingFristCreateDto)">
+            <summary>
+            创建第一人称漫游
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoamingService.CreateViewPort(Glendale.Design.Dtos.Roaming.RoamingViewPortCreateDto)">
+            <summary>
+            创建自定义视点漫游
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoamingService.UpdateAsync(System.Guid,Glendale.Design.Dtos.Roaming.RoamingCreateDto)">
+            <summary>
+            修改漫游名称和备注
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoamingService.GetListAsync(Glendale.Design.Dtos.Roaming.GetListRoamingInput)">
+             <summary>
+            漫游模型查询[带分页]
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.RoleOrgJoinService">
+            <summary>
+            项目目录接口
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.RoleOrgJoinService.GetAsync(System.Guid)">
+            <summary>
+            获取
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoleOrgJoinService.CreateAsync(Glendale.Design.Dtos.RoleOrgJoin.RoleOrgJoinCreateUpdateDto)">
+            <summary>
+            新增
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoleOrgJoinService.CreateArryAsync(System.Collections.Generic.List{Glendale.Design.Dtos.RoleOrgJoin.RoleOrgJoinCreateUpdateDto})">
+            <summary>
+            新增列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoleOrgJoinService.UpdateAsync(System.Guid,Glendale.Design.Dtos.RoleOrgJoin.RoleOrgJoinCreateUpdateDto)">
+            <summary>
+            更新
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoleOrgJoinService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoleOrgJoinService.GetListAsync(Glendale.Design.Dtos.RoleOrgJoin.GetListRoleOrgJoinInput)">
+            <summary>
+            列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.RoleOrgJoinService.GetAllListAsync(Glendale.Design.Dtos.RoleOrgJoin.GetListRoleOrgJoinInput)">
+            <summary>
+            获取所有数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glendale.Design.Services.ShareRecordService">
+            <summary>
+            分享接口
+            </summary>   
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.CreateAsync(Glendale.Design.Dtos.ShareRecord.ShareRecordCreateUpdateDto)">
+            <summary>
+            创建分享
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.GetAsync(System.Guid)">
+            <summary>
+            获取对象
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.GetListAsync(Glendale.Design.Dtos.ShareRecord.GetListShareRecordInput)">
+            <summary>
+            分享查询【带分页】
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.Addpvm(System.Guid)">
+            <summary>
+            累加分享数量
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.IsAuth(System.Guid)">
+            <summary>
+            是否需要授权码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.AuthVerify(System.Guid,System.String)">
+            <summary>
+            校验授权码是否正确
+            </summary>
+            <param name="id">记录Id</param>
+            <param name="auth">授权码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ShareRecordService.IsExceed(Glendale.Design.Models.ShareRecord)">
+            <summary>
+            分享状态判断
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.SqlModelTreeGLIDService.GetTreeChildId(System.String,System.String)">
+            <summary>
+            获取模型楼层所有子id
+            </summary>
+            <param name="modelName"></param>
+            <param name="glId">模型id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.SystemRoleAppService.GetAllListAsync(Glendale.Design.Dtos.Role.GetListIdentityRolesInput)">
+            <summary>
+            查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.SystemRoleAppService.CreateInfoAsync(Glendale.Design.Dtos.User.RoleDto)">
+            <summary>
+            新增
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.SystemRoleAppService.UpdateInfoAsync(System.Guid,Glendale.Design.Dtos.User.RoleDto)">
+            <summary>
+            修改
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.SystemUserAppService.GetListAsync(Glendale.Design.Dtos.User.GetListIdentityUsersInput)">
+            <summary>
+            查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.SystemUserAppService.GetUsersListAsync(Glendale.Design.Dtos.User.GetListIdentityUsersInput)">
+            <summary>
+            查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.SystemUserAppService.UpdateInfoAsync(System.Guid,Glendale.Design.Dtos.User.UserDto)">
+            <summary>
+            修改
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.UserAppService.GetListAsync(Volo.Abp.Identity.GetIdentityUsersInput)">
+            <summary>
+            查询
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.UserAppService.CreateAsync(Volo.Abp.Identity.IdentityUserCreateDto)">
+            <summary>
+            注册账号
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Volo.Abp.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Glendale.Design.Services.UserAppService.UpdateAsync(System.Guid,Volo.Abp.Identity.IdentityUserUpdateDto)">
+            <summary>
+            修改账号信息
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Volo.Abp.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Glendale.Design.Services.UserAppService.DeleteAsync(System.Guid)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.UserProfileAppService.GetAll">
+            <summary>
+            获取系统所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.UserProfileAppService.ResetPasswordAsync(System.Guid,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="id"></param>
+            <param name="password"></param>
+            <returns></returns>
+            <exception cref="T:Volo.Abp.BusinessException"></exception>
+        </member>
+        <member name="M:Glendale.Design.Services.UserProfileAppService.UpdatePhoneNumber(System.String,System.String,System.String,System.String)">
+            <summary>
+            修改手机号码
+            </summary>
+            <param name="userName"></param>
+            <param name="phoneNumber"></param>
+            <param name="code"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.UserProfileAppService.UpdateLock(System.String)">
+            <summary>
+            更新用户锁定状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.UserProfileAppService.IsInitPwd(System.String)">
+            <summary>
+            验证密码是否试初始值123456
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.UserProfileAppService.ChangePassword(Glendale.Design.Dtos.User.SystemChangePasswordInput)">
+            <summary>
+            修改当前密码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Volo.Abp.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Glendale.Design.Services.UserRegisterAppService.PostRegisterAsync(Glendale.Design.Dtos.User.IdentityUserRegisterCreateDto)">
+            <summary>
+            注册账号
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Volo.Abp.UserFriendlyException"></exception>
+        </member>
+        <member name="T:Glendale.Design.Services.ViewPointService">
+            <summary>
+            视点设置
+            </summary>
+        </member>
+        <member name="M:Glendale.Design.Services.ViewPointService.CreateAsync(Glendale.Design.Dtos.ViewPoint.ViewPointCreateUpdateDto)">
+            <summary>
+            创建视点
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ViewPointService.GetListAsync(Glendale.Design.Dtos.ViewPoint.GetListViewPointInput)">
+            <summary>
+            视点结构树【带分页】
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glendale.Design.Services.ViewPointService.UpdateStatusAsync(System.Guid,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            更新视点状态
+            </summary>
+            <param name="id"></param>
+            <param name="Status"></param>
+            <param name="OutStatus"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

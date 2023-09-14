@@ -1,0 +1,861 @@
+[11:41:01 INF] Starting Glendale.Design.HttpApi.Host.
+[11:41:04 INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[11:41:04 INF] Loaded ABP modules:
+[11:41:04 INF] - Glendale.Design.DesignHttpApiHostModule
+[11:41:04 INF]   - Glendale.Design.DesignHttpApiModule
+[11:41:04 INF]     - Glendale.Design.DesignApplicationContractsModule
+[11:41:04 INF]       - Glendale.Design.DesignDomainSharedModule
+[11:41:04 INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+[11:41:04 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+[11:41:04 INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+[11:41:04 INF]           - Volo.Abp.Validation.AbpValidationModule
+[11:41:04 INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+[11:41:04 INF]             - Volo.Abp.Localization.AbpLocalizationModule
+[11:41:04 INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+[11:41:04 INF]               - Volo.Abp.Settings.AbpSettingsModule
+[11:41:04 INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+[11:41:04 INF]                 - Volo.Abp.Security.AbpSecurityModule
+[11:41:04 INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+[11:41:04 INF]                   - Volo.Abp.Data.AbpDataModule
+[11:41:04 INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+[11:41:04 INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+[11:41:04 INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+[11:41:04 INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+[11:41:04 INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+[11:41:04 INF]           - Volo.Abp.Features.AbpFeaturesModule
+[11:41:04 INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+[11:41:04 INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+[11:41:04 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+[11:41:04 INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+[11:41:04 INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+[11:41:04 INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+[11:41:04 INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+[11:41:04 INF]             - Volo.Abp.EventBus.AbpEventBusModule
+[11:41:04 INF]               - Volo.Abp.Json.AbpJsonModule
+[11:41:04 INF]                 - Volo.Abp.Timing.AbpTimingModule
+[11:41:04 INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+[11:41:04 INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+[11:41:04 INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+[11:41:04 INF]               - Volo.Abp.Auditing.AbpAuditingModule
+[11:41:04 INF]                 - Volo.Abp.Threading.AbpThreadingModule
+[11:41:04 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+[11:41:04 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+[11:41:04 INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+[11:41:04 INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+[11:41:04 INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+[11:41:04 INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+[11:41:04 INF]             - Volo.Abp.Http.AbpHttpModule
+[11:41:04 INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+[11:41:04 INF]               - Volo.Abp.Minify.AbpMinifyModule
+[11:41:04 INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+[11:41:04 INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+[11:41:04 INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+[11:41:04 INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+[11:41:04 INF]             - Volo.Abp.UI.AbpUiModule
+[11:41:04 INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+[11:41:04 INF]           - Volo.Abp.Application.AbpDddApplicationModule
+[11:41:04 INF]             - Volo.Abp.Domain.AbpDddDomainModule
+[11:41:04 INF]               - Volo.Abp.Guids.AbpGuidsModule
+[11:41:04 INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+[11:41:04 INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+[11:41:04 INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+[11:41:04 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+[11:41:04 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+[11:41:04 INF]   - Glendale.Design.DesignApplicationModule
+[11:41:04 INF]     - Glendale.Design.DesignDomainModule
+[11:41:04 INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+[11:41:04 INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+[11:41:04 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+[11:41:04 INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+[11:41:04 INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+[11:41:04 INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+[11:41:04 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+[11:41:04 INF]         - Volo.Abp.Caching.AbpCachingModule
+[11:41:04 INF]           - Volo.Abp.Serialization.AbpSerializationModule
+[11:41:04 INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+[11:41:04 INF]         - Volo.Abp.Users.AbpUsersDomainModule
+[11:41:04 INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+[11:41:04 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+[11:41:04 INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+[11:41:04 INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+[11:41:04 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+[11:41:04 INF]       - Volo.Abp.BlobStoring.AbpBlobStoringModule
+[11:41:04 INF]       - Volo.Abp.Emailing.AbpEmailingModule
+[11:41:04 INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+[11:41:04 INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+[11:41:04 INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+[11:41:04 INF]     - Glendale.Design.DesignCoreModule
+[11:41:04 INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+[11:41:04 INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+[11:41:04 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+[11:41:04 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+[11:41:04 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+[11:41:04 INF]   - Glendale.Design.EntityFrameworkCore.DesignEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+[11:41:04 INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+[11:41:04 INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+[11:41:04 INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+[11:41:04 INF]   - Glendale.Design.EntityFrameworkCore.DesignModelEntityFrameworkCoreModule
+[11:41:04 INF]   - Volo.Abp.Autofac.AbpAutofacModule
+[11:41:04 INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+[11:41:04 INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+[11:41:04 INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+[11:41:04 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+[11:41:04 INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+[11:41:04 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+[11:41:04 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+[11:41:04 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+[11:41:04 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+[11:41:04 INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+[11:41:04 INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+[11:41:04 INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+[11:41:04 INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+[11:41:04 INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+[11:41:04 INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+[11:41:04 INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+[11:41:04 INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+[11:41:04 INF]   - Volo.Abp.BlobStoring.FileSystem.AbpBlobStoringFileSystemModule
+[11:41:04 DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+[11:41:04 DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+[11:41:04 DBG] Started background worker: Glendale.Design.Jobs.ModelStateCheckerWorker
+[11:41:04 DBG] Started background worker: Glendale.Design.Jobs.CADStateCheckerWorker
+[11:41:04 INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+[11:41:05 INF] Using the default authentication scheme Identity.Application for IdentityServer
+[11:41:05 DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+[11:41:05 DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+[11:41:05 DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+[11:41:05 DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+[11:41:05 DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+[11:41:06 DBG] sharding core starting......
+[11:41:06 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  start init......
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+      FROM information_schema.tables
+      WHERE table_type = 'BASE TABLE' AND table_schema = 'ueDemoData_Model'
+[11:41:08 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineFlatten'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'Document' has a global query filter defined and is the required end of a relationship with the entity 'DocumentLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'DocumentVersion' has a global query filter defined and is the required end of a relationship with the entity 'DocumentVerThan'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'Message' has a global query filter defined and is the required end of a relationship with the entity 'MessageReceive'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolder'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'IdentityUser' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolderUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:08 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[11:41:09 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  complete init
+[11:41:09 INF] Initialized all ABP modules.
+[11:41:09 INF] Application started. Press Ctrl+C to shut down.
+[11:41:09 INF] Hosting environment: Development
+[11:41:09 INF] Content root path: D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.HttpApi.Host
+[11:41:09 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:41:09 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:41:09 INF] CORS policy execution successful.
+[11:41:09 INF] CORS policy execution successful.
+[11:41:09 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:41:09 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 325.7213ms
+[11:41:09 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 325.7221ms
+[11:41:09 INF] CORS policy execution successful.
+[11:41:09 DBG] Login Url: /Account/Login
+[11:41:09 DBG] Login Return Url Parameter: ReturnUrl
+[11:41:09 DBG] Logout Url: /Account/Logout
+[11:41:09 DBG] ConsentUrl Url: /Consent
+[11:41:09 DBG] Consent Return Url Parameter: returnUrl
+[11:41:09 DBG] Error Url: /Account/Error
+[11:41:09 DBG] Error Id Parameter: errorId
+[11:41:09 INF] Request starting HTTP/1.1 GET https://localhost:44310/.well-known/openid-configuration - -
+[11:41:09 DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+[11:41:10 DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+[11:41:10 INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+[11:41:10 DBG] Start discovery request
+[11:41:10 INF] Request finished HTTP/1.1 GET https://localhost:44310/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 1116.7250ms
+[11:41:10 INF] Request starting HTTP/1.1 GET https://localhost:44310/.well-known/openid-configuration/jwks - -
+[11:41:10 DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+[11:41:10 DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+[11:41:10 INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+[11:41:10 DBG] Start key discovery request
+[11:41:10 INF] Request finished HTTP/1.1 GET https://localhost:44310/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 17.4343ms
+[11:41:10 INF] Successfully validated the token.
+[11:41:10 DBG] CORS request made for path: /api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:10 INF] No CORS policy found for the specified request.
+[11:41:10 INF] Authorization was successful.
+[11:41:10 INF] Executing endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:41:10 INF] Route matched with {action = "Get", controller = "Project", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Glendale.Design.Dtos.Project.ProjectDto] GetAsync(System.Guid) on controller Glendale.Design.Services.ProjectService (Glendale.Design.Application).
+[11:41:11 INF] Authorization was successful.
+[11:41:11 WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+[11:41:11 WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+[11:41:11 INF] Executing ObjectResult, writing value of type 'Glendale.Design.Dtos.Project.ProjectDto'.
+[11:41:11 INF] Executed action Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application) in 880.2158ms
+[11:41:11 INF] Executed endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:41:11 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 200 - application/json;+charset=utf-8 2318.2837ms
+[11:41:11 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - -
+[11:41:11 INF] CORS policy execution successful.
+[11:41:11 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - - - 204 - - 4.6062ms
+[11:41:11 INF] Request starting HTTP/2 GET https://localhost:44310/api/identity/my-profile - -
+[11:41:11 INF] CORS policy execution successful.
+[11:41:11 INF] Successfully validated the token.
+[11:41:11 DBG] CORS request made for path: /api/identity/my-profile from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:11 INF] No CORS policy found for the specified request.
+[11:41:11 INF] Executing endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:41:11 INF] Route matched with {area = "identity", controller = "Profile", action = "Get", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.ProfileDto] GetAsync() on controller Volo.Abp.Identity.ProfileController (Volo.Abp.Identity.HttpApi).
+[11:41:11 INF] Authorization was successful.
+[11:41:12 INF] Authorization was successful.
+[11:41:12 DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:41:12 DBG] Not found in the cache: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:41:12 DBG] Getting all granted permissions from the repository for this provider name,key: U,b29944e7-b476-4872-a20e-58e29aa62946
+[11:41:12 DBG] Setting the cache items. Count: 64
+[11:41:12 DBG] Finished setting the cache items. Count: 64
+[11:41:12 DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:41:12 DBG] Not found in the cache: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:41:12 DBG] Getting all granted permissions from the repository for this provider name,key: R,system
+[11:41:12 DBG] Setting the cache items. Count: 64
+[11:41:12 DBG] Finished setting the cache items. Count: 64
+[11:41:12 DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:41:12 DBG] Not found in the cache: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:41:12 DBG] Getting all granted permissions from the repository for this provider name,key: C,Design_BIM
+[11:41:12 DBG] Setting the cache items. Count: 64
+[11:41:12 DBG] Finished setting the cache items. Count: 64
+[11:41:12 INF] Authorization was successful.
+[11:41:12 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.ProfileDto'.
+[11:41:12 INF] Executed action Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi) in 614.8335ms
+[11:41:12 INF] Executed endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:41:12 INF] Request finished HTTP/2 GET https://localhost:44310/api/identity/my-profile - - - 200 - application/json;+charset=utf-8 631.3175ms
+[11:41:15 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-2241-caae-3478cf61e1ae - -
+[11:41:15 INF] CORS policy execution successful.
+[11:41:15 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-2241-caae-3478cf61e1ae - - - 204 - - 2.7827ms
+[11:41:15 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-2241-caae-3478cf61e1ae - -
+[11:41:15 INF] CORS policy execution successful.
+[11:41:15 INF] Successfully validated the token.
+[11:41:15 DBG] CORS request made for path: /api/app/document/array from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:15 INF] No CORS policy found for the specified request.
+[11:41:15 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetArrayAsync (Glendale.Design.Application)'
+[11:41:15 INF] Route matched with {action = "GetArray", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetArrayAsync(System.Guid[]) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:41:15 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:41:16 INF] Executed action Glendale.Design.Services.DocumentService.GetArrayAsync (Glendale.Design.Application) in 181.8616ms
+[11:41:16 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetArrayAsync (Glendale.Design.Application)'
+[11:41:16 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-2241-caae-3478cf61e1ae - - - 200 - application/json;+charset=utf-8 219.9318ms
+[11:41:19 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/file - -
+[11:41:19 INF] CORS policy execution successful.
+[11:41:19 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/file - - - 204 - - 1.1705ms
+[11:41:19 INF] Request starting HTTP/2 POST https://localhost:44310/api/app/file multipart/form-data;+boundary=----WebKitFormBoundary7TZyRTEsfpouawcd 2799463
+[11:41:19 INF] CORS policy execution successful.
+[11:41:19 INF] Successfully validated the token.
+[11:41:19 DBG] CORS request made for path: /api/app/file from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:19 INF] No CORS policy found for the specified request.
+[11:41:19 INF] Authorization was successful.
+[11:41:19 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.CreateAsync (Glendale.Design.Application)'
+[11:41:19 INF] Route matched with {action = "Create", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] CreateAsync(Microsoft.AspNetCore.Http.IFormFile) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:41:19 DBG] Login Url: /Account/Login
+[11:41:19 DBG] Login Return Url Parameter: ReturnUrl
+[11:41:19 DBG] Logout Url: /Account/Logout
+[11:41:19 DBG] ConsentUrl Url: /Consent
+[11:41:19 DBG] Consent Return Url Parameter: returnUrl
+[11:41:19 DBG] Error Url: /Account/Error
+[11:41:19 DBG] Error Id Parameter: errorId
+[11:41:19 INF] Authorization was successful.
+[11:41:19 INF] Executing ObjectResult, writing value of type 'System.String'.
+[11:41:19 INF] Executed action Glendale.Design.Services.FileAppService.CreateAsync (Glendale.Design.Application) in 344.0979ms
+[11:41:19 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.CreateAsync (Glendale.Design.Application)'
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 INF] Request finished HTTP/2 POST https://localhost:44310/api/app/file multipart/form-data;+boundary=----WebKitFormBoundary7TZyRTEsfpouawcd 2799463 - 200 - text/plain;+charset=utf-8 626.0890ms
+[11:41:20 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/document/3a0d56a0-54be-2241-caae-3478cf61e1ae/blob-name?BlobName=203185c944d542a6a743e714229e89b3 - -
+[11:41:20 INF] CORS policy execution successful.
+[11:41:20 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/document/3a0d56a0-54be-2241-caae-3478cf61e1ae/blob-name?BlobName=203185c944d542a6a743e714229e89b3 - - - 204 - - 1.7055ms
+[11:41:20 INF] Request starting HTTP/2 PUT https://localhost:44310/api/app/document/3a0d56a0-54be-2241-caae-3478cf61e1ae/blob-name?BlobName=203185c944d542a6a743e714229e89b3 - 0
+[11:41:20 INF] CORS policy execution successful.
+[11:41:20 INF] Successfully validated the token.
+[11:41:20 DBG] CORS request made for path: /api/app/document/3a0d56a0-54be-2241-caae-3478cf61e1ae/blob-name from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:20 INF] No CORS policy found for the specified request.
+[11:41:20 INF] Authorization was successful.
+[11:41:20 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.UpdateBlobNameAsync (Glendale.Design.Application)'
+[11:41:20 INF] Route matched with {action = "UpdateBlobName", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Glendale.Design.Dtos.Document.DocumentDto] UpdateBlobNameAsync(System.Guid, System.String) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:41:20 DBG] Login Url: /Account/Login
+[11:41:20 DBG] Login Return Url Parameter: ReturnUrl
+[11:41:20 DBG] Logout Url: /Account/Logout
+[11:41:20 DBG] ConsentUrl Url: /Consent
+[11:41:20 DBG] Consent Return Url Parameter: returnUrl
+[11:41:20 DBG] Error Url: /Account/Error
+[11:41:20 DBG] Error Id Parameter: errorId
+[11:41:20 INF] Executing ObjectResult, writing value of type 'Glendale.Design.Dtos.Document.DocumentDto'.
+[11:41:20 INF] Executed action Glendale.Design.Services.DocumentService.UpdateBlobNameAsync (Glendale.Design.Application) in 60.4681ms
+[11:41:20 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.UpdateBlobNameAsync (Glendale.Design.Application)'
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 DBG] Added 0 entity changes to the current audit log
+[11:41:20 INF] Request finished HTTP/2 PUT https://localhost:44310/api/app/document/3a0d56a0-54be-2241-caae-3478cf61e1ae/blob-name?BlobName=203185c944d542a6a743e714229e89b3 - 0 - 200 - application/json;+charset=utf-8 123.1266ms
+[11:41:25 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197341-1489657&modelName=202308261442552747 - -
+[11:41:25 INF] CORS policy execution successful.
+[11:41:25 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197341-1489657&modelName=202308261442552747 - - - 204 - - 1.6177ms
+[11:41:25 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197341-1489657&modelName=202308261442552747 - -
+[11:41:25 INF] CORS policy execution successful.
+[11:41:25 INF] Successfully validated the token.
+[11:41:25 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:25 INF] No CORS policy found for the specified request.
+[11:41:25 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:25 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:41:25 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:41:25 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:41:25 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:25 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:25 DBG] data source route result:ds0
+[11:41:25 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261442552747])
+mapping table :[tableName]-->[Model_Property_202308261442552747]
+mapping table :[tableName]-->[Model_Tree_202308261442552747]
+mapping table :[tableName]-->[Model_Type_202308261442552747]
+[11:41:41 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1429607&modelName=202308261442552747 - -
+[11:41:41 INF] CORS policy execution successful.
+[11:41:41 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1429607&modelName=202308261442552747 - - - 204 - - 1.1448ms
+[11:41:41 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1429607&modelName=202308261442552747 - -
+[11:41:41 INF] CORS policy execution successful.
+[11:41:41 INF] Successfully validated the token.
+[11:41:41 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:41 INF] No CORS policy found for the specified request.
+[11:41:41 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:41 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:41:41 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:41:41 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:41:41 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:41 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:41 DBG] data source route result:ds0
+[11:41:41 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261442552747])
+[11:41:41 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197326-768066&modelName=202308261442552747 - -
+[11:41:41 INF] CORS policy execution successful.
+[11:41:41 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197326-768066&modelName=202308261442552747 - - - 204 - - 1.1128ms
+[11:41:41 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197326-768066&modelName=202308261442552747 - -
+[11:41:41 INF] CORS policy execution successful.
+[11:41:41 INF] Successfully validated the token.
+[11:41:41 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:41 INF] No CORS policy found for the specified request.
+[11:41:41 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:41 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:41:41 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:41:41 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:41:41 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:41 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:41 DBG] data source route result:ds0
+[11:41:41 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261442552747])
+[11:41:42 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197323-1461999&modelName=202308261442552747 - -
+[11:41:42 INF] CORS policy execution successful.
+[11:41:42 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197323-1461999&modelName=202308261442552747 - - - 204 - - 1.1065ms
+[11:41:42 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197323-1461999&modelName=202308261442552747 - -
+[11:41:42 INF] CORS policy execution successful.
+[11:41:42 INF] Successfully validated the token.
+[11:41:42 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:42 INF] No CORS policy found for the specified request.
+[11:41:42 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:42 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:41:42 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:41:42 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:41:42 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:42 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:42 DBG] data source route result:ds0
+[11:41:42 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261442552747])
+[11:41:43 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1437570&modelName=202308261442552747 - -
+[11:41:43 INF] CORS policy execution successful.
+[11:41:43 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1437570&modelName=202308261442552747 - - - 204 - - 1.2302ms
+[11:41:43 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1437570&modelName=202308261442552747 - -
+[11:41:43 INF] CORS policy execution successful.
+[11:41:43 INF] Successfully validated the token.
+[11:41:43 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:43 INF] No CORS policy found for the specified request.
+[11:41:43 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:43 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:41:43 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:41:43 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:41:43 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:43 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:43 DBG] data source route result:ds0
+[11:41:43 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261442552747])
+[11:41:45 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402994&modelName=202308261442552747 - -
+[11:41:45 INF] CORS policy execution successful.
+[11:41:45 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402994&modelName=202308261442552747 - - - 204 - - 1.2693ms
+[11:41:45 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402994&modelName=202308261442552747 - -
+[11:41:45 INF] CORS policy execution successful.
+[11:41:45 INF] Successfully validated the token.
+[11:41:45 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:45 INF] No CORS policy found for the specified request.
+[11:41:45 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:45 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:41:45 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:41:45 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:41:45 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:45 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:45 DBG] data source route result:ds0
+[11:41:45 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261442552747])
+[11:41:46 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402166&modelName=202308261442552747 - -
+[11:41:46 INF] CORS policy execution successful.
+[11:41:46 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402166&modelName=202308261442552747 - - - 204 - - 1.9790ms
+[11:41:46 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402166&modelName=202308261442552747 - -
+[11:41:46 INF] CORS policy execution successful.
+[11:41:46 INF] Successfully validated the token.
+[11:41:46 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:41:46 INF] No CORS policy found for the specified request.
+[11:41:46 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:46 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:41:46 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:41:46 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:41:46 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:46 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:41:46 DBG] data source route result:ds0
+[11:41:46 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261442552747])
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (29,892ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261442552747` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+[11:41:55 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:41:55 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 30158.1486ms
+[11:41:55 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:41:55 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197341-1489657&modelName=202308261442552747 - - - 200 - application/json;+charset=utf-8 30183.7594ms
+[11:42:05 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:42:05 INF] CORS policy execution successful.
+[11:42:05 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 1.1787ms
+[11:42:05 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:42:05 INF] CORS policy execution successful.
+[11:42:05 INF] Successfully validated the token.
+[11:42:05 DBG] CORS request made for path: /api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:05 INF] No CORS policy found for the specified request.
+[11:42:05 INF] Authorization was successful.
+[11:42:05 INF] Executing endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:42:05 INF] Route matched with {action = "Get", controller = "Project", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Glendale.Design.Dtos.Project.ProjectDto] GetAsync(System.Guid) on controller Glendale.Design.Services.ProjectService (Glendale.Design.Application).
+[11:42:05 INF] Authorization was successful.
+[11:42:05 INF] Executing ObjectResult, writing value of type 'Glendale.Design.Dtos.Project.ProjectDto'.
+[11:42:05 INF] Executed action Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application) in 14.5724ms
+[11:42:05 INF] Executed endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:42:05 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 200 - application/json;+charset=utf-8 23.9800ms
+[11:42:05 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - -
+[11:42:05 INF] CORS policy execution successful.
+[11:42:05 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - - - 204 - - 1.2229ms
+[11:42:05 INF] Request starting HTTP/2 GET https://localhost:44310/api/identity/my-profile - -
+[11:42:05 INF] CORS policy execution successful.
+[11:42:05 INF] Successfully validated the token.
+[11:42:05 DBG] CORS request made for path: /api/identity/my-profile from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:05 INF] No CORS policy found for the specified request.
+[11:42:05 INF] Executing endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:42:05 INF] Route matched with {area = "identity", controller = "Profile", action = "Get", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.ProfileDto] GetAsync() on controller Volo.Abp.Identity.ProfileController (Volo.Abp.Identity.HttpApi).
+[11:42:05 INF] Authorization was successful.
+[11:42:05 INF] Authorization was successful.
+[11:42:05 DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:42:05 DBG] Found in the cache: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:42:05 DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:42:05 DBG] Found in the cache: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:42:05 DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:42:05 DBG] Found in the cache: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:42:05 INF] Authorization was successful.
+[11:42:05 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.ProfileDto'.
+[11:42:05 INF] Executed action Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi) in 70.9379ms
+[11:42:05 INF] Executed endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:42:05 INF] Request finished HTTP/2 GET https://localhost:44310/api/identity/my-profile - - - 200 - application/json;+charset=utf-8 80.8874ms
+[11:42:06 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:42:06 INF] CORS policy execution successful.
+[11:42:06 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 1.1594ms
+[11:42:06 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:42:06 INF] CORS policy execution successful.
+[11:42:06 INF] Successfully validated the token.
+[11:42:06 DBG] CORS request made for path: /api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:06 INF] No CORS policy found for the specified request.
+[11:42:06 INF] Authorization was successful.
+[11:42:06 INF] Executing endpoint 'Glendale.Design.Services.ProjectFolderService.GetTreesAsync (Glendale.Design.Application)'
+[11:42:06 INF] Route matched with {action = "GetTrees", controller = "ProjectFolder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[Glendale.Design.Dtos.TreeDto]] GetTreesAsync(System.Guid) on controller Glendale.Design.Services.ProjectFolderService (Glendale.Design.Application).
+[11:42:06 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.TreeDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:06 INF] Executed action Glendale.Design.Services.ProjectFolderService.GetTreesAsync (Glendale.Design.Application) in 709.6014ms
+[11:42:06 INF] Executed endpoint 'Glendale.Design.Services.ProjectFolderService.GetTreesAsync (Glendale.Design.Application)'
+[11:42:06 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 200 - application/json;+charset=utf-8 728.6625ms
+[11:42:06 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:42:06 INF] CORS policy execution successful.
+[11:42:06 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 204 - - 1.2681ms
+[11:42:06 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:42:06 INF] CORS policy execution successful.
+[11:42:06 INF] Successfully validated the token.
+[11:42:06 DBG] CORS request made for path: /api/app/document from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:06 INF] No CORS policy found for the specified request.
+[11:42:06 INF] Authorization was successful.
+[11:42:06 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:42:06 INF] Route matched with {action = "GetList", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:42:07 INF] Authorization was successful.
+[11:42:07 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:07 INF] Executed action Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application) in 582.9653ms
+[11:42:07 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:42:07 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 200 - application/json;+charset=utf-8 617.6701ms
+[11:42:07 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=033d8284743244b2b2ee7c88a58e0fcb - -
+[11:42:07 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=203185c944d542a6a743e714229e89b3 - -
+[11:42:07 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=fb750d597d92471d950ee7d222d480a7 - -
+[11:42:07 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=55d5f04256e14b2cbe38451d37d54046 - -
+[11:42:07 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:42:07 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:42:07 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:42:07 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:42:07 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=22a7fc16f36c4ced9be26b8e98325e42 - -
+[11:42:07 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:42:07 INF] Executing FileContentResult, sending file with download name '' ...
+[11:42:07 INF] Executing FileContentResult, sending file with download name '' ...
+[11:42:07 INF] Executing FileContentResult, sending file with download name '' ...
+[11:42:07 INF] Executing FileContentResult, sending file with download name '' ...
+[11:42:07 INF] Executing FileContentResult, sending file with download name '' ...
+[11:42:07 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 70.5938ms
+[11:42:07 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 72.9279ms
+[11:42:07 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 80.2924ms
+[11:42:07 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 125.3844ms
+[11:42:07 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 128.0673ms
+[11:42:07 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:42:07 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=55d5f04256e14b2cbe38451d37d54046 - - - 200 994612 image/png 194.8147ms
+[11:42:07 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=22a7fc16f36c4ced9be26b8e98325e42 - - - 200 1975036 image/png 195.6065ms
+[11:42:07 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=203185c944d542a6a743e714229e89b3 - - - 200 2799273 image/png 242.0074ms
+[11:42:07 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=033d8284743244b2b2ee7c88a58e0fcb - - - 200 2067859 image/png 242.0583ms
+[11:42:08 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=fb750d597d92471d950ee7d222d480a7 - - - 200 2576762 image/png 434.4387ms
+[11:42:11 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:11 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 30047.779ms
+[11:42:11 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:11 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1429607&modelName=202308261442552747 - - - 200 - application/json;+charset=utf-8 30054.1844ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (30,024ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261442552747` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (30,007ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261442552747` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+[11:42:11 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:11 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 30018.8365ms
+[11:42:11 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:11 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197326-768066&modelName=202308261442552747 - - - 200 - application/json;+charset=utf-8 30025.5299ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (30,007ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261442552747` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+[11:42:12 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:12 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 30017.7503ms
+[11:42:12 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:12 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197323-1461999&modelName=202308261442552747 - - - 200 - application/json;+charset=utf-8 30022.9860ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (30,017ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261442552747` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+[11:42:13 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:13 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 30031.3406ms
+[11:42:13 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:13 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197305-1437570&modelName=202308261442552747 - - - 200 - application/json;+charset=utf-8 30037.9132ms
+[11:42:15 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:42:15 INF] CORS policy execution successful.
+[11:42:15 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 1.9154ms
+[11:42:15 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:42:15 INF] CORS policy execution successful.
+[11:42:15 INF] Successfully validated the token.
+[11:42:15 DBG] CORS request made for path: /api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:15 INF] No CORS policy found for the specified request.
+[11:42:15 INF] Authorization was successful.
+[11:42:15 INF] Executing endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:42:15 INF] Route matched with {action = "Get", controller = "Project", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Glendale.Design.Dtos.Project.ProjectDto] GetAsync(System.Guid) on controller Glendale.Design.Services.ProjectService (Glendale.Design.Application).
+[11:42:15 INF] Authorization was successful.
+[11:42:15 INF] Executing ObjectResult, writing value of type 'Glendale.Design.Dtos.Project.ProjectDto'.
+[11:42:15 INF] Executed action Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application) in 14.2663ms
+[11:42:15 INF] Executed endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:42:15 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 200 - application/json;+charset=utf-8 22.1999ms
+[11:42:15 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - -
+[11:42:15 INF] CORS policy execution successful.
+[11:42:15 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - - - 204 - - 0.9925ms
+[11:42:15 INF] Request starting HTTP/2 GET https://localhost:44310/api/identity/my-profile - -
+[11:42:15 INF] CORS policy execution successful.
+[11:42:15 INF] Successfully validated the token.
+[11:42:15 DBG] CORS request made for path: /api/identity/my-profile from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:15 INF] No CORS policy found for the specified request.
+[11:42:15 INF] Executing endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:42:15 INF] Route matched with {area = "identity", controller = "Profile", action = "Get", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.ProfileDto] GetAsync() on controller Volo.Abp.Identity.ProfileController (Volo.Abp.Identity.HttpApi).
+[11:42:15 INF] Authorization was successful.
+[11:42:15 INF] Authorization was successful.
+[11:42:15 DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:42:15 DBG] Found in the cache: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:42:15 DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:42:15 DBG] Found in the cache: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:42:15 DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:42:15 DBG] Found in the cache: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:42:15 INF] Authorization was successful.
+[11:42:15 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.ProfileDto'.
+[11:42:15 INF] Executed action Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi) in 55.1611ms
+[11:42:15 INF] Executed endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:42:15 INF] Request finished HTTP/2 GET https://localhost:44310/api/identity/my-profile - - - 200 - application/json;+charset=utf-8 63.0611ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (30,001ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261442552747` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+[11:42:15 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:15 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 30013.1325ms
+[11:42:15 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:15 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402994&modelName=202308261442552747 - - - 200 - application/json;+charset=utf-8 30020.9798ms
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (30,019ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261442552747` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+[11:42:16 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:16 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 30034.2451ms
+[11:42:16 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:16 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=197272-1402166&modelName=202308261442552747 - - - 200 - application/json;+charset=utf-8 30040.5239ms
+[11:42:17 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-7be1-65fa-7e31f7cf81dd - -
+[11:42:17 INF] CORS policy execution successful.
+[11:42:17 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-7be1-65fa-7e31f7cf81dd - - - 204 - - 1.0308ms
+[11:42:17 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-7be1-65fa-7e31f7cf81dd - -
+[11:42:17 INF] CORS policy execution successful.
+[11:42:17 INF] Successfully validated the token.
+[11:42:17 DBG] CORS request made for path: /api/app/document/array from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:17 INF] No CORS policy found for the specified request.
+[11:42:17 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetArrayAsync (Glendale.Design.Application)'
+[11:42:17 INF] Route matched with {action = "GetArray", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetArrayAsync(System.Guid[]) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:42:17 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:17 INF] Executed action Glendale.Design.Services.DocumentService.GetArrayAsync (Glendale.Design.Application) in 16.0118ms
+[11:42:17 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetArrayAsync (Glendale.Design.Application)'
+[11:42:17 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document/array?ids=3a0d56a0-54be-7be1-65fa-7e31f7cf81dd - - - 200 - application/json;+charset=utf-8 24.5364ms
+[11:42:28 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=18&modelName=202308261451052096 - -
+[11:42:28 INF] CORS policy execution successful.
+[11:42:28 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/model-property/getproperty?externalId=18&modelName=202308261451052096 - - - 204 - - 1.0382ms
+[11:42:28 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=18&modelName=202308261451052096 - -
+[11:42:28 INF] CORS policy execution successful.
+[11:42:28 INF] Successfully validated the token.
+[11:42:28 DBG] CORS request made for path: /api/app/model-property/getproperty from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:42:28 INF] No CORS policy found for the specified request.
+[11:42:28 INF] Executing endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:28 INF] Route matched with {action = "GetModelProperty", controller = "ModelProperty", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto]] GetModelProperty(System.String, System.String) on controller Glendale.Design.Services.ModelPropertyAppService (Glendale.Design.Application).
+[11:42:28 DBG] compile parameter:query entity types :Glendale.Design.Models.ModelProperty,is no tracking: ,is ignore filter :False,is not support :False,max query connections limit:,connection mode:,readonly:,as route:False,is sequence:,same with sharding comparer:
+[11:42:28 DBG] queryable combine:ShardingCore.Sharding.ShardingExecutors.QueryableCombines.EnumerableQueryableCombine
+[11:42:28 DBG] queryable combine before:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:42:28 DBG] queryable combine after:DbSet<ModelProperty>()
+    .Where(o => o.ExternalId == <>c__DisplayClass10_0.externalId && o.ModelName == <>c__DisplayClass10_0.modelName)
+[11:42:28 DBG] data source route result:ds0
+[11:42:28 DBG] table route results:(has different tail:False,current table:[Model_Property_202308261451052096])
+mapping table :[tableName]-->[Model_Property_202308261451052096]
+mapping table :[tableName]-->[Model_Tree_202308261451052096]
+mapping table :[tableName]-->[Model_Type_202308261451052096]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2,282ms) [Parameters=[@__externalId_0='?' (Size = 50), @__modelName_1='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+      SELECT `m`.`Id`, `m`.`ExternalId`, `m`.`Glid`, `m`.`Ifcurl`, `m`.`ModelName`, `m`.`PropertyName`, `m`.`PropertySetName`, `m`.`PropertyTypeName`, `m`.`Value`
+      FROM `Model_Property_202308261451052096` AS `m`
+      WHERE (`m`.`ExternalId` = @__externalId_0) AND (`m`.`ModelName` = @__modelName_1)
+[11:42:30 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.ModelProperty.ModelPropertyDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:42:30 INF] Executed action Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application) in 2317.0325ms
+[11:42:30 INF] Executed endpoint 'Glendale.Design.Services.ModelPropertyAppService.GetModelProperty (Glendale.Design.Application)'
+[11:42:30 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/model-property/getproperty?externalId=18&modelName=202308261451052096 - - - 200 - application/json;+charset=utf-8 2323.2208ms
+[11:44:21 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 1.2398ms
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Successfully validated the token.
+[11:44:21 DBG] CORS request made for path: /api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:21 INF] No CORS policy found for the specified request.
+[11:44:21 INF] Authorization was successful.
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "Get", controller = "Project", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Glendale.Design.Dtos.Project.ProjectDto] GetAsync(System.Guid) on controller Glendale.Design.Services.ProjectService (Glendale.Design.Application).
+[11:44:21 INF] Authorization was successful.
+[11:44:21 INF] Executing ObjectResult, writing value of type 'Glendale.Design.Dtos.Project.ProjectDto'.
+[11:44:21 INF] Executed action Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application) in 17.1884ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.ProjectService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 200 - application/json;+charset=utf-8 57.8148ms
+[11:44:21 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/identity/my-profile - - - 204 - - 1.0809ms
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/identity/my-profile - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Successfully validated the token.
+[11:44:21 DBG] CORS request made for path: /api/identity/my-profile from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:21 INF] No CORS policy found for the specified request.
+[11:44:21 INF] Executing endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:44:21 INF] Route matched with {area = "identity", controller = "Profile", action = "Get", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.ProfileDto] GetAsync() on controller Volo.Abp.Identity.ProfileController (Volo.Abp.Identity.HttpApi).
+[11:44:21 INF] Authorization was successful.
+[11:44:21 INF] Authorization was successful.
+[11:44:21 DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:44:21 DBG] Found in the cache: pn:U,pk:b29944e7-b476-4872-a20e-58e29aa62946,n:AbpIdentity.Roles.ManagePermissions
+[11:44:21 DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:44:21 DBG] Found in the cache: pn:R,pk:system,n:AbpIdentity.Roles.ManagePermissions
+[11:44:21 DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:44:21 DBG] Found in the cache: pn:C,pk:Design_BIM,n:AbpIdentity.Roles.ManagePermissions
+[11:44:21 INF] Authorization was successful.
+[11:44:21 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.ProfileDto'.
+[11:44:21 INF] Executed action Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi) in 47.8595ms
+[11:44:21 INF] Executed endpoint 'Volo.Abp.Identity.ProfileController.GetAsync (Volo.Abp.Identity.HttpApi)'
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/identity/my-profile - - - 200 - application/json;+charset=utf-8 54.1478ms
+[11:44:21 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 0.9916ms
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Successfully validated the token.
+[11:44:21 DBG] CORS request made for path: /api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:21 INF] No CORS policy found for the specified request.
+[11:44:21 INF] Authorization was successful.
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.ProjectFolderService.GetTreesAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "GetTrees", controller = "ProjectFolder", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[Glendale.Design.Dtos.TreeDto]] GetTreesAsync(System.Guid) on controller Glendale.Design.Services.ProjectFolderService (Glendale.Design.Application).
+[11:44:21 INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Glendale.Design.Dtos.TreeDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:21 INF] Executed action Glendale.Design.Services.ProjectFolderService.GetTreesAsync (Glendale.Design.Application) in 8.6858ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.ProjectFolderService.GetTreesAsync (Glendale.Design.Application)'
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/project-folder/trees/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 200 - application/json;+charset=utf-8 15.9345ms
+[11:44:21 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 204 - - 1.4946ms
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:21 INF] CORS policy execution successful.
+[11:44:21 INF] Successfully validated the token.
+[11:44:21 DBG] CORS request made for path: /api/app/document from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:21 INF] No CORS policy found for the specified request.
+[11:44:21 INF] Authorization was successful.
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "GetList", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:44:21 INF] Authorization was successful.
+[11:44:21 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:21 INF] Executed action Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application) in 30.6746ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 200 - application/json;+charset=utf-8 36.9040ms
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=22a7fc16f36c4ced9be26b8e98325e42 - -
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=033d8284743244b2b2ee7c88a58e0fcb - -
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:44:21 INF] Executing FileContentResult, sending file with download name '' ...
+[11:44:21 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 11.1367ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Executing FileContentResult, sending file with download name '' ...
+[11:44:21 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 12.3164ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=203185c944d542a6a743e714229e89b3 - -
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=22a7fc16f36c4ced9be26b8e98325e42 - - - 200 1975036 image/png 29.5560ms
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=033d8284743244b2b2ee7c88a58e0fcb - - - 200 2067859 image/png 32.6335ms
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=55d5f04256e14b2cbe38451d37d54046 - -
+[11:44:21 INF] Executing FileContentResult, sending file with download name '' ...
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:44:21 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 18.9271ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Executing FileContentResult, sending file with download name '' ...
+[11:44:21 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 11.4013ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/file/?blobName=fb750d597d92471d950ee7d222d480a7 - -
+[11:44:21 INF] Executing endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Route matched with {action = "Get", controller = "File", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileResult] GetAsync(System.String) on controller Glendale.Design.Services.FileAppService (Glendale.Design.Application).
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=55d5f04256e14b2cbe38451d37d54046 - - - 200 994612 image/png 26.0313ms
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=203185c944d542a6a743e714229e89b3 - - - 200 2799273 image/png 46.7121ms
+[11:44:21 INF] Executing FileContentResult, sending file with download name '' ...
+[11:44:21 INF] Executed action Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application) in 14.9777ms
+[11:44:21 INF] Executed endpoint 'Glendale.Design.Services.FileAppService.GetAsync (Glendale.Design.Application)'
+[11:44:21 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/file/?blobName=fb750d597d92471d950ee7d222d480a7 - - - 200 2576762 image/png 32.1596ms
+[11:44:30 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/document-version?DocumentId=3a0d56a0-54be-2241-caae-3478cf61e1ae&skipCount=0&maxResultCount=5 - -
+[11:44:30 INF] CORS policy execution successful.
+[11:44:30 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/document-version?DocumentId=3a0d56a0-54be-2241-caae-3478cf61e1ae&skipCount=0&maxResultCount=5 - - - 204 - - 0.9756ms
+[11:44:30 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document-version?DocumentId=3a0d56a0-54be-2241-caae-3478cf61e1ae&skipCount=0&maxResultCount=5 - -
+[11:44:30 INF] CORS policy execution successful.
+[11:44:30 INF] Successfully validated the token.
+[11:44:30 DBG] CORS request made for path: /api/app/document-version from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:30 INF] No CORS policy found for the specified request.
+[11:44:30 INF] Authorization was successful.
+[11:44:30 INF] Executing endpoint 'Glendale.Design.Services.DocumentVersionService.GetListAsync (Glendale.Design.Application)'
+[11:44:30 INF] Route matched with {action = "GetList", controller = "DocumentVersion", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.DocumentVer.DocumentVersionListDto]] GetListAsync(Glendale.Design.Dtos.DocumentVer.GetListDocumentVersionInput) on controller Glendale.Design.Services.DocumentVersionService (Glendale.Design.Application).
+[11:44:30 INF] Authorization was successful.
+[11:44:30 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.DocumentVer.DocumentVersionListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:30 INF] Executed action Glendale.Design.Services.DocumentVersionService.GetListAsync (Glendale.Design.Application) in 69.0063ms
+[11:44:30 INF] Executed endpoint 'Glendale.Design.Services.DocumentVersionService.GetListAsync (Glendale.Design.Application)'
+[11:44:30 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document-version?DocumentId=3a0d56a0-54be-2241-caae-3478cf61e1ae&skipCount=0&maxResultCount=5 - - - 200 - application/json;+charset=utf-8 80.5756ms
+[11:44:51 INF] Request starting HTTP/2 OPTIONS https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:51 INF] CORS policy execution successful.
+[11:44:51 INF] Request finished HTTP/2 OPTIONS https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 204 - - 1.8504ms
+[11:44:51 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:51 INF] CORS policy execution successful.
+[11:44:51 INF] Successfully validated the token.
+[11:44:51 DBG] CORS request made for path: /api/app/document from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:51 INF] No CORS policy found for the specified request.
+[11:44:51 INF] Authorization was successful.
+[11:44:51 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:51 INF] Route matched with {action = "GetList", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:44:51 INF] Authorization was successful.
+[11:44:51 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:51 INF] Executed action Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application) in 28.661ms
+[11:44:51 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:51 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 200 - application/json;+charset=utf-8 34.8961ms
+[11:44:52 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:52 INF] CORS policy execution successful.
+[11:44:52 INF] Successfully validated the token.
+[11:44:52 DBG] CORS request made for path: /api/app/document from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:52 INF] No CORS policy found for the specified request.
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:52 INF] Route matched with {action = "GetList", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:52 INF] Executed action Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application) in 26.1638ms
+[11:44:52 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:52 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 200 - application/json;+charset=utf-8 32.3080ms
+[11:44:52 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:52 INF] CORS policy execution successful.
+[11:44:52 INF] Successfully validated the token.
+[11:44:52 DBG] CORS request made for path: /api/app/document from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:52 INF] No CORS policy found for the specified request.
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:52 INF] Route matched with {action = "GetList", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:52 INF] Executed action Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application) in 28.8974ms
+[11:44:52 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:52 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 200 - application/json;+charset=utf-8 34.7109ms
+[11:44:52 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:52 INF] CORS policy execution successful.
+[11:44:52 INF] Successfully validated the token.
+[11:44:52 DBG] CORS request made for path: /api/app/document from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:52 INF] No CORS policy found for the specified request.
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:52 INF] Route matched with {action = "GetList", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:52 INF] Executed action Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application) in 32.1823ms
+[11:44:52 INF] Executed endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:52 INF] Request finished HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - - - 200 - application/json;+charset=utf-8 38.2131ms
+[11:44:52 INF] Request starting HTTP/2 GET https://localhost:44310/api/app/document?documentType=1&documentType=2&documentType=3&sorting=creationTime%20desc&projectId=3a0abfce-3b33-6958-4cb0-d6b14b8e3250&projectFolderId=3a0d56a0-549b-2ad1-209b-aa80bf60eae8&MaxResultCount=10&SkipCount=0 - -
+[11:44:52 INF] CORS policy execution successful.
+[11:44:52 INF] Successfully validated the token.
+[11:44:52 DBG] CORS request made for path: /api/app/document from origin: http://localhost:8200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[11:44:52 INF] No CORS policy found for the specified request.
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing endpoint 'Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application)'
+[11:44:52 INF] Route matched with {action = "GetList", controller = "Document", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Glendale.Design.Dtos.Document.DocumentListDto]] GetListAsync(Glendale.Design.Dtos.Document.GetListDocumentInput) on controller Glendale.Design.Services.DocumentService (Glendale.Design.Application).
+[11:44:52 INF] Authorization was successful.
+[11:44:52 INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Glendale.Design.Dtos.Document.DocumentListDto, Glendale.Design.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[11:44:52 INF] Executed action Glendale.Design.Services.DocumentService.GetListAsync (Glendale.Design.Application) in 26.269

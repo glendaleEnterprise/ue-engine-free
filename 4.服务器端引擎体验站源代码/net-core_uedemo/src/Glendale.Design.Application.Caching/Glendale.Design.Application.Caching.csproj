@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net5.0</TargetFramework>
+	  <RootNamespace>Glendale.Design</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Caching.CSRedis" Version="3.6.60" />
+    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="4.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glendale.Design.Application.Contracts\Glendale.Design.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Glendale.Design.Core\Glendale.Design.Core.csproj" />
+  </ItemGroup>
+
+</Project>

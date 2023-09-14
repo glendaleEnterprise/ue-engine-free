@@ -1,0 +1,17 @@
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\Glendale.Design.Domain.deps.json
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\Glendale.Design.Domain.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\ref\Glendale.Design.Domain.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\Glendale.Design.Domain.pdb
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\Glendale.Design.Core.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\Glendale.Design.Domain.Shared.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\Glendale.Design.Core.pdb
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\bin\Debug\net5.0\Glendale.Design.Domain.Shared.pdb
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.csproj.AssemblyReference.cache
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.AssemblyInfoInputs.cache
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.AssemblyInfo.cs
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.csproj.CoreCompileInputs.cache
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.csproj.CopyComplete
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\ref\Glendale.Design.Domain.dll
+D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.Domain\obj\Debug\net5.0\Glendale.Design.Domain.pdb

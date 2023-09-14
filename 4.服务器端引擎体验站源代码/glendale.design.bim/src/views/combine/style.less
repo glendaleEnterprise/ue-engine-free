@@ -1,0 +1,280 @@
+#ClampPage {
+  height: calc(100vh - 128px);
+
+  #cesiumContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .left-tree {
+    position: absolute;
+    top: 10vh;
+    bottom: 10vh;
+    min-height: 70vh;
+    background-color: rgba(50, 54, 65, 0.88);
+    width: 260px;
+
+    /deep/.ant-card-body {
+      padding: 10px;
+
+      .anticon {
+        svg {
+          height: 24px;
+          line-height: 24px;
+          margin: 0 3px;
+        }
+      }
+    }
+
+    .model-tree-box {
+      width: 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+      background: transparent;
+
+      /deep/.ant-tree>li>.ant-tree-checkbox {
+        display: inline-block;
+      }
+
+      /deep/.ant-tree-title {
+        display: flex;
+        justify-content: space-between;
+
+        >span:first-child {
+          width: 60%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+/deep/.ant-tree li .ant-tree-node-content-wrapper:hover {
+  background-color: rgba(202, 224, 216, 0.4);
+}
+
+/deep/.ant-tree {
+  color: #fff;
+
+  li {
+    .ant-tree-node-content-wrapper {
+      color: #fff;
+
+      &:hover {
+        background-color: rgba(5, 160, 129, 0.4);
+      }
+    }
+
+    .ant-tree-node-content-wrapper.ant-tree-node-selected {
+      background-color: rgba(5, 160, 129, 0.4);
+    }
+  }
+
+  .ant-tree-checkbox-inner {
+    background: transparent;
+  }
+
+}
+
+/deep/.ant-modal-content {
+  background-color: rgba(50, 54, 65, 0.88);
+  color: #fff;
+
+  .ant-modal-header {
+    background-color: transparent;
+    border-color: rgba(232, 232, 232, 0.5);
+    padding: 10px 24px;
+
+    .ant-modal-title {
+      color: #ffffff;
+    }
+  }
+
+  .ant-modal-body {
+    padding: 15px;
+  }
+
+  .ant-modal-footer {
+    border-color: rgba(232, 232, 232, 0.5);
+    border: none;
+    padding-bottom: 15px;
+
+    .ant-btn {
+      height: 28px;
+      padding: 0 12px;
+    }
+
+    .ant-btn:first-child {
+      background-color: transparent;
+      color: #fff;
+
+      &:hover {
+        color: #21ad8d;
+      }
+    }
+
+  }
+
+  .ant-modal-close {
+    color: #ffffff;
+  }
+
+  .ant-modal-close-x {
+    line-height: 43px;
+    height: 43px;
+  }
+
+
+}
+
+/deep/.ant-form {
+  .ant-card,
+  .ant-input-number,
+  .ant-input,
+  .ant-select-selection {
+    background: transparent;
+    color: #fff;
+    width: 100%;
+  }
+
+  .ant-select-arrow {
+    color: #ffffff;
+  }
+
+  .ant-form-item {
+    .ant-form-item-label>label {
+      color: #fff;
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  .ant-form-item:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .ant-form-item-label {
+    line-height: 32px;
+  }
+
+  .ant-form-item-control {
+    line-height: 32px;
+  }
+}
+
+/deep/.scroll-box {
+  margin-top: 15px;
+  height: 48vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    //整体样式
+    height: 5px;
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    //滑动滑块条样式
+    border-radius: 1px;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.2);
+    background: #ffffff;
+  }
+
+  &::-webkit-scrollbar-track {
+    //轨道的样式
+    box-shadow: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .ant-tree-node-content-wrapper {
+    color: #ffffff;
+  }
+
+  .ant-list-empty-text {
+    padding: 5px;
+    text-align: left;
+  }
+}
+
+/deep/.ant-modal {
+  padding: 0;
+  top: 0 !important;
+  // overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50% !important;
+
+  .ant-select-arrow {
+    color: #ffffff;
+  }
+
+  .ant-input-number {
+    width: 100%;
+  }
+
+  .ant-card,
+  .ant-input-number,
+  .ant-input,
+  .ant-select-selection {
+    background: transparent;
+    color: #fff;
+  }
+
+  .color-picker {
+    display: flex;
+    align-items: center;
+
+    .ant-form-item-control-wrapper {
+      .ant-form-item-children {
+        display: flex;
+
+        input {
+          width: calc(97% - 32px);
+        }
+
+        .m-colorPicker {
+          width: 32px;
+          margin-left: 3%;
+          border: 1px solid #d9d9d9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .ant-btn {
+      padding: 0 5px;
+      margin-left: 3%;
+    }
+  }
+
+  .ant-tabs-nav-wrap {
+    text-align: center;
+
+    .ant-tabs-tab {
+      color: #fff;
+    }
+
+    .ant-tabs-tab-active.ant-tabs-tab {
+      color: #05a081;
+    }
+  }
+}
+
+/deep/.ant-modal-wrap {
+  right: unset;
+  bottom: unset;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: unset;
+}

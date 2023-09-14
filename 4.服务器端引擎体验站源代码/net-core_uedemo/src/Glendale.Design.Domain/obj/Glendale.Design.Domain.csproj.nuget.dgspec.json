@@ -1,0 +1,319 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain\\Glendale.Design.Domain.csproj": {}
+  },
+  "projects": {
+    "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Core\\Glendale.Design.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Core\\Glendale.Design.Core.csproj",
+        "projectName": "Glendale.Design.Core",
+        "projectPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Core\\Glendale.Design.Core.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            },
+            "SharpCompress": {
+              "target": "Package",
+              "version": "[0.30.1, )"
+            },
+            "Volo.Abp.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain.Shared\\Glendale.Design.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain.Shared\\Glendale.Design.Domain.Shared.csproj",
+        "projectName": "Glendale.Design.Domain.Shared",
+        "projectPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain.Shared\\Glendale.Design.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.FileProviders.Embedded": {
+              "target": "Package",
+              "version": "[5.0.*, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Volo.Abp.AuditLogging.Domain.Shared": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.BackgroundJobs.Domain.Shared": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.FeatureManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.Identity.Domain.Shared": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.IdentityServer.Domain.Shared": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.SettingManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain\\Glendale.Design.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain\\Glendale.Design.Domain.csproj",
+        "projectName": "Glendale.Design.Domain",
+        "projectPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain\\Glendale.Design.Domain.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Core\\Glendale.Design.Core.csproj": {
+                "projectPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Core\\Glendale.Design.Core.csproj"
+              },
+              "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain.Shared\\Glendale.Design.Domain.Shared.csproj": {
+                "projectPath": "D:\\最新版一键安装包\\github\\源码\\UeEngine(Free)\\4.服务器端引擎体验站源代码\\net-core_uedemo\\src\\Glendale.Design.Domain.Shared\\Glendale.Design.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Volo.Abp.AuditLogging.Domain": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.BackgroundJobs.Domain": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.BlobStoring": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.Emailing": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.FeatureManagement.Domain": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.Identity.Domain": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.IdentityServer.Domain": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.Identity": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.IdentityServer": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            },
+            "Volo.Abp.SettingManagement.Domain": {
+              "target": "Package",
+              "version": "[4.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

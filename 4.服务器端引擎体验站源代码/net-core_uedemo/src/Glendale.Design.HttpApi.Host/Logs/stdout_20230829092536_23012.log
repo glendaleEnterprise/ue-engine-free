@@ -1,0 +1,296 @@
+[17:25:43 INF] Starting Glendale.Design.HttpApi.Host.
+[17:25:53 INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:25:53 INF] Creating key {902fb5cc-b36d-4fcb-9e33-b39db23c0848} with creation date 2023-08-29 09:25:53Z, activation date 2023-08-29 09:25:53Z, and expiration date 2023-11-27 09:25:53Z.
+[17:25:53 INF] Writing data to file 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys\key-902fb5cc-b36d-4fcb-9e33-b39db23c0848.xml'.
+[17:25:53 INF] Loaded ABP modules:
+[17:25:53 INF] - Glendale.Design.DesignHttpApiHostModule
+[17:25:53 INF]   - Glendale.Design.DesignHttpApiModule
+[17:25:53 INF]     - Glendale.Design.DesignApplicationContractsModule
+[17:25:53 INF]       - Glendale.Design.DesignDomainSharedModule
+[17:25:53 INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+[17:25:53 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+[17:25:53 INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+[17:25:53 INF]           - Volo.Abp.Validation.AbpValidationModule
+[17:25:53 INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+[17:25:53 INF]             - Volo.Abp.Localization.AbpLocalizationModule
+[17:25:53 INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+[17:25:53 INF]               - Volo.Abp.Settings.AbpSettingsModule
+[17:25:53 INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+[17:25:53 INF]                 - Volo.Abp.Security.AbpSecurityModule
+[17:25:53 INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+[17:25:53 INF]                   - Volo.Abp.Data.AbpDataModule
+[17:25:53 INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+[17:25:53 INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+[17:25:53 INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+[17:25:53 INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+[17:25:53 INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+[17:25:53 INF]           - Volo.Abp.Features.AbpFeaturesModule
+[17:25:53 INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+[17:25:53 INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+[17:25:53 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+[17:25:53 INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+[17:25:53 INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+[17:25:53 INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+[17:25:53 INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+[17:25:53 INF]             - Volo.Abp.EventBus.AbpEventBusModule
+[17:25:53 INF]               - Volo.Abp.Json.AbpJsonModule
+[17:25:53 INF]                 - Volo.Abp.Timing.AbpTimingModule
+[17:25:53 INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+[17:25:53 INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+[17:25:53 INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+[17:25:53 INF]               - Volo.Abp.Auditing.AbpAuditingModule
+[17:25:53 INF]                 - Volo.Abp.Threading.AbpThreadingModule
+[17:25:53 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+[17:25:53 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+[17:25:53 INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+[17:25:53 INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+[17:25:53 INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+[17:25:53 INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+[17:25:53 INF]             - Volo.Abp.Http.AbpHttpModule
+[17:25:53 INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+[17:25:53 INF]               - Volo.Abp.Minify.AbpMinifyModule
+[17:25:53 INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+[17:25:53 INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+[17:25:53 INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+[17:25:53 INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+[17:25:53 INF]             - Volo.Abp.UI.AbpUiModule
+[17:25:53 INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+[17:25:53 INF]           - Volo.Abp.Application.AbpDddApplicationModule
+[17:25:53 INF]             - Volo.Abp.Domain.AbpDddDomainModule
+[17:25:53 INF]               - Volo.Abp.Guids.AbpGuidsModule
+[17:25:53 INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+[17:25:53 INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+[17:25:53 INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+[17:25:53 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+[17:25:53 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+[17:25:53 INF]   - Glendale.Design.DesignApplicationModule
+[17:25:53 INF]     - Glendale.Design.DesignDomainModule
+[17:25:53 INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+[17:25:53 INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+[17:25:53 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+[17:25:53 INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+[17:25:53 INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+[17:25:53 INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+[17:25:53 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+[17:25:53 INF]         - Volo.Abp.Caching.AbpCachingModule
+[17:25:53 INF]           - Volo.Abp.Serialization.AbpSerializationModule
+[17:25:53 INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+[17:25:53 INF]         - Volo.Abp.Users.AbpUsersDomainModule
+[17:25:53 INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+[17:25:53 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+[17:25:53 INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+[17:25:53 INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+[17:25:53 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+[17:25:53 INF]       - Volo.Abp.BlobStoring.AbpBlobStoringModule
+[17:25:53 INF]       - Volo.Abp.Emailing.AbpEmailingModule
+[17:25:53 INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+[17:25:53 INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+[17:25:53 INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+[17:25:53 INF]     - Glendale.Design.DesignCoreModule
+[17:25:53 INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+[17:25:53 INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+[17:25:53 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+[17:25:53 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+[17:25:53 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+[17:25:53 INF]   - Glendale.Design.EntityFrameworkCore.DesignEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+[17:25:53 INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+[17:25:53 INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+[17:25:53 INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+[17:25:53 INF]   - Glendale.Design.EntityFrameworkCore.DesignModelEntityFrameworkCoreModule
+[17:25:53 INF]   - Volo.Abp.Autofac.AbpAutofacModule
+[17:25:53 INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+[17:25:53 INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+[17:25:53 INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+[17:25:53 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+[17:25:53 INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+[17:25:53 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+[17:25:53 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+[17:25:53 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+[17:25:53 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+[17:25:53 INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+[17:25:53 INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+[17:25:53 INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+[17:25:53 INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+[17:25:53 INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+[17:25:53 INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+[17:25:53 INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+[17:25:53 INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+[17:25:53 INF]   - Volo.Abp.BlobStoring.FileSystem.AbpBlobStoringFileSystemModule
+[17:25:53 DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+[17:25:53 DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+[17:25:53 DBG] Started background worker: Glendale.Design.Jobs.ModelStateCheckerWorker
+[17:25:53 DBG] Started background worker: Glendale.Design.Jobs.CADStateCheckerWorker
+[17:25:53 INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+[17:25:55 INF] Using the default authentication scheme Identity.Application for IdentityServer
+[17:25:55 DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+[17:25:55 DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+[17:25:55 DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+[17:25:55 DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+[17:25:55 DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+[17:25:55 DBG] sharding core starting......
+[17:25:55 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  start init......
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE DATABASE `ueDemoData_Model`;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER DATABASE CHARACTER SET utf8mb4;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Model_Drawing` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` varchar(100) CHARACTER SET utf8mb4 NULL,
+          `FileName` varchar(100) CHARACTER SET utf8mb4 NULL,
+          `Type` varchar(50) CHARACTER SET utf8mb4 NULL,
+          `Guid` varchar(36) CHARACTER SET utf8mb4 NULL,
+          `ModelName` varchar(36) CHARACTER SET utf8mb4 NULL,
+          CONSTRAINT `PK_Model_Drawing` PRIMARY KEY (`Id`)
+      ) CHARACTER SET utf8mb4;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Model_Drawing_rvtid` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `DrawGuid` varchar(36) CHARACTER SET utf8mb4 NULL,
+          `RevitId` varchar(36) CHARACTER SET utf8mb4 NULL,
+          `ModelName` varchar(36) CHARACTER SET utf8mb4 NULL,
+          CONSTRAINT `PK_Model_Drawing_rvtid` PRIMARY KEY (`Id`)
+      ) CHARACTER SET utf8mb4;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Model_Property_Space` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Glid` varchar(50) CHARACTER SET utf8mb4 NULL,
+          `ExternalId` varchar(50) CHARACTER SET utf8mb4 NULL,
+          `PropertyTypeName` varchar(100) CHARACTER SET utf8mb4 NULL,
+          `PropertySetName` varchar(100) CHARACTER SET utf8mb4 NULL,
+          `PropertyName` varchar(100) CHARACTER SET utf8mb4 NULL,
+          `Ifcurl` varchar(200) CHARACTER SET utf8mb4 NULL,
+          `Value` varchar(100) CHARACTER SET utf8mb4 NULL,
+          `ModelName` varchar(36) CHARACTER SET utf8mb4 NULL,
+          CONSTRAINT `PK_Model_Property_Space` PRIMARY KEY (`Id`)
+      ) CHARACTER SET utf8mb4;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Model_Space` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Glid` varchar(50) CHARACTER SET utf8mb4 NULL,
+          `PGlid` varchar(50) CHARACTER SET utf8mb4 NULL,
+          `Level` int NULL,
+          `Name` varchar(500) CHARACTER SET utf8mb4 NULL,
+          `ExternalId` varchar(50) CHARACTER SET utf8mb4 NULL,
+          `GroupName` varchar(50) CHARACTER SET utf8mb4 NULL,
+          `ModelName` varchar(36) CHARACTER SET utf8mb4 NULL,
+          CONSTRAINT `PK_Model_Space` PRIMARY KEY (`Id`)
+      ) CHARACTER SET utf8mb4;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Model_Drawing_Name_ModelName` ON `Model_Drawing` (`Name`, `ModelName`);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Model_Drawing_rvtid_ModelName` ON `Model_Drawing_rvtid` (`ModelName`);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Model_Property_Space_ExternalId_ModelName` ON `Model_Property_Space` (`ExternalId`, `ModelName`);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Model_Space_PGlid_ModelName` ON `Model_Space` (`PGlid`, `ModelName`);
+[17:25:59 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineFlatten'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'Document' has a global query filter defined and is the required end of a relationship with the entity 'DocumentLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'DocumentVersion' has a global query filter defined and is the required end of a relationship with the entity 'DocumentVerThan'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'Message' has a global query filter defined and is the required end of a relationship with the entity 'MessageReceive'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolder'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'IdentityUser' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolderUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[17:25:59 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  complete init
+[17:25:59 INF] Initialized all ABP modules.
+[17:25:59 INF] Application started. Press Ctrl+C to shut down.
+[17:25:59 INF] Hosting environment: Development
+[17:25:59 INF] Content root path: D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.HttpApi.Host
+[17:25:59 INF] Request starting HTTP/2 GET https://localhost:44310/ - -
+[17:26:00 DBG] Login Url: /Account/Login
+[17:26:00 DBG] Login Return Url Parameter: ReturnUrl
+[17:26:00 DBG] Logout Url: /Account/Logout
+[17:26:00 DBG] ConsentUrl Url: /Consent
+[17:26:00 DBG] Consent Return Url Parameter: returnUrl
+[17:26:00 DBG] Error Url: /Account/Error
+[17:26:00 DBG] Error Id Parameter: errorId
+[17:26:00 INF] Executing endpoint 'Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host)'
+[17:26:00 INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Glendale.Design.Controllers.HomeController (Glendale.Design.HttpApi.Host).
+[17:26:00 INF] Executing RedirectResult, redirecting to /swagger.
+[17:26:00 INF] Executed action Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host) in 20.6048ms
+[17:26:00 INF] Executed endpoint 'Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host)'
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger - -
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/index.html - -
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger - - - 301 - - 8.5509ms
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/ - - - 302 - - 831.7068ms
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/index.html - - - 200 - text/html;charset=utf-8 63.5631ms
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/swagger-ui.css - -
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/ui/abp.js - -
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/ui/abp.swagger.js - -
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/swagger-ui-bundle.js - -
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/swagger-ui-standalone-preset.js - -
+[17:26:00 INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+[17:26:00 INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/ui/abp.js - - - 200 3025 application/javascript 13.1515ms
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/ui/abp.swagger.js - - - 200 1026 application/javascript 13.6535ms
+[17:26:00 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[17:26:00 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[17:26:00 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/swagger-ui.css - - - 200 143410 text/css 48.7506ms
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 54.8164ms
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/swagger-ui-bundle.js - - - 200 1097461 application/javascript 81.9064ms
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/v1/swagger.json - -
+[17:26:00 INF] Request starting HTTP/2 GET https://localhost:44310/swagger/favicon-32x32.png - -
+[17:26:00 INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[17:26:00 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/favicon-32x32.png - - - 200 628 image/png 4.6967ms
+[17:26:01 INF] Request finished HTTP/2 GET https://localhost:44310/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 589.9538ms
+[17:26:05 INF] Start processing HTTP request POST http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261451052096
+[17:26:05 INF] Sending HTTP request POST http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261451052096
+[17:26:05 INF] Received HTTP response headers after 132.0031ms - 200
+[17:26:05 INF] End processing HTTP request after 137.4175ms - 200
+[17:26:05 INF] http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261451052096BIM/GIS轻量化状态:{"code":1,"codeMsg":"查询成功","datas":[{"name":"化工厂一角(ue)","lightweightName":"202308261451052096","lastStatus":0,"status":100,"statusDescription":"轻量化成功","taskCode":"","transcodingInfo":null,"initiatingUser":"","uniqueCode":"","fileType":"nwd","softwareType":"Navisworks","dataVersion":"2019","fileSize":38258,"creationTime":"2023-08-26T14:51:07.093449","executionTime":"2023-08-26T15:19:41.383223","completionTime":"2023-08-26T15:19:58.72785","priority":203,"modelDownloadUrl":"","modelUploadUrl":"","modelUploadSiteAddress":"http://127.0.0.1:18186","mD5":null,"otherInfo":"","callbackInterfaceURL":null,"alertMailAddress":null,"modelAccessAddress":"http://127.0.0.1:18186/Tools/output/model/202308261451052096/root.glt","dbSyncStatus":-1,"plugin":false,"pluginVersion":"","toolsVersion":"v2.0.20230714115400","sourceFileName":"202308071035206580.zip","configJson":"{\"style\":1,\"zGrid\":1,\"viewStyle\":0,\"drawing\":0,\"accuracy\":3,\"parametric\":0,\"familyName\":\"\",\"writetype\":0,\"locationType\":0,\"vertexNormal\":1,\"isExportLines\":0,\"unitRatio\":0.001,\"type\":2,\"offsetX\":0.0,\"offsetY\":0.0,\"offsetZ\":0.0,\"isInstance\":0,\"maxCountInstance\":100,\"isLod\":1,\"engineType\":2,\"srs\":\"\",\"srsOrigin\":[],\"longitude\":1.9003144895714261,\"latitude\":0.5969026041820608,\"transHeight\":0.0,\"edgeOn\":0,\"level\":1,\"xCount\":5,\"yCount\":3,\"draco\":1,\"flipY\":0,\"linePercent\":1.0,\"minDistance\":0.0,\"compatible\":0,\"faceNumLimit\":300000,\"textureLimit\":10240,\"textureSizePercent\":50,\"textureQuality\":30,\"combineTexture\":0,\"blockRender\":1,\"useGisCS\":1,\"materialType\":0,\"compressionLevel\":10,\"quantizePositionBits\":16,\"quantizeNormalBits\":10,\"quantizeTexcoordBits\":12}","dbAccessAddress":"http://127.0.0.1:18186/Tools/output/db/202308261451052096.db","isCAD":false,"gridJsonURL":"http://127.0.0.1:18186/Tools/output/model/202308261451052096/GridJson.json","floorJsonURL":null,"id":57}],"dataCount":0}
+[17:26:06 DBG] Added 0 entity changes to the current audit log
+[17:26:06 DBG] Added 0 entity changes to the current audit log
+[17:26:06 INF] Start processing HTTP request POST http://192.168.1.62:18186/api/app/model/syncdbtodatabase
+[17:26:06 INF] Sending HTTP request POST http://192.168.1.62:18186/api/app/model/syncdbtodatabase
+[17:26:06 INF] Received HTTP response headers after 280.0445ms - 200
+[17:26:06 INF] End processing HTTP request after 280.1959ms - 200
+[17:26:06 INF] http://192.168.1.62:18186/api/app/model/syncdbtodatabase同步数据{"code":1,"codeMsg":"模型属性数据后台开始同步!","datas":null,"dataCount":0}
+[17:26:06 INF] Start processing HTTP request POST http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261435066313
+[17:26:06 INF] Sending HTTP request POST http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261435066313
+[17:26:06 INF] Received HTTP response headers after 70.2837ms - 200
+[17:26:06 INF] End processing HTTP request after 70.4759ms - 200
+[17:26:06 INF] http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261435066313BIM/GIS轻量化状态:{"code":1,"codeMsg":"查询成功","datas":[{"name":"桥梁模型(ue)","lightweightName":"202308261435066313","lastStatus":0,"status":100,"statusDescription":"轻量化成功","taskCode":"","transcodingInfo":null,"initiatingUser":"","uniqueCode":"","fileType":"rvt","softwareType":"Revit","dataVersion":"2020","fileSize":923596,"creationTime":"2023-08-26T14:35:23.572854","executionTime":"2023-08-26T14:45:05.854152","completionTime":"2023-08-26T14:45:13.060644","priority":203,"modelDownloadUrl":"","modelUploadUrl":"","modelUploadSiteAddress":"http://127.0.0.1:18186","mD5":null,"otherInfo":"","callbackInterfaceURL":null,"alertMailAddress":null,"modelAccessAddress":"http://127.0.0.1:18186/Tools/output/model/202308261435066313/root.glt","dbSyncStatus":-1,"plugin":true,"pluginVersion":"v5.0","toolsVersion":"v2.0.20230714115400","sourceFileName":"031737.glzip","configJson":"{\"style\":1,\"zGrid\":1,\"viewStyle\":0,\"drawing\":0,\"accuracy\":3,\"parametric\":0,\"familyName\":\"\",\"writetype\":0,\"locationType\":0,\"vertexNormal\":1,\"isExportLines\":0,\"unitRatio\":0.001,\"type\":2,\"offsetX\":0.0,\"offsetY\":0.0,\"offsetZ\":0.0,\"isInstance\":0,\"maxCountInstance\":100,\"isLod\":0,\"engineType\":2,\"srs\":\"\",\"srsOrigin\":[],\"longitude\":1.9003144895714261,\"latitude\":0.5969026041820608,\"transHeight\":0.0,\"edgeOn\":0,\"level\":1,\"xCount\":2,\"yCount\":2,\"draco\":1,\"flipY\":0,\"linePercent\":1.0,\"minDistance\":0.0,\"compatible\":0,\"faceNumLimit\":300000,\"textureLimit\":10240,\"textureSizePercent\":50,\"textureQuality\":30,\"combineTexture\":0,\"blockRender\":1,\"useGisCS\":1,\"materialType\":0,\"compressionLevel\":10,\"quantizePositionBits\":16,\"quantizeNormalBits\":10,\"quantizeTexcoordBits\":12}","dbAccessAddress":"http://127.0.0.1:18186/Tools/output/db/202308261435066313.db","isCAD":false,"gridJsonURL":"http://127.0.0.1:18186/Tools/output/model/202308261435066313/GridJson.json","floorJsonURL":"http://127.0.0.1:18186/Tools/output/model/202308261435066313/202308261435066313floor.json","id":53}],"dataCount":0}
+[17:26:06 DBG] Added 0 entity changes to the current audit log
+[17:26:06 DBG] Added 0 entity changes to the current audit log
+[17:26:06 INF] Start processing HTTP request POST http://192.168.1.62:18186/api/app/model/syncdbtodatabase
+[17:26:06 INF] Sending HTTP request POST http://192.168.1.62:18186/api/app/model/syncdbtodatabase
+[17:26:06 INF] Received HTTP response headers after 115.2671ms - 200
+[17:26:06 INF] End processing HTTP request after 115.4858ms - 200
+[17:26:06 INF] http://192.168.1.62:18186/api/app/model/syncdbtodatabase同步数据{"code":1,"codeMsg":"模型属性数据后台开始同步!","datas":null,"dataCount":0}
+[17:26:06 INF] Start processing HTTP request POST http://192.168.1.62:18186/api/app/gismodel/QueryModelInfo?LightweightName=202308261422300344
+[17:26:06 INF] Sending HTTP request POST http://192.168.1.62:18186/api/app/gismodel/QueryModelInfo?LightweightName=202308261422300344
+[17:26:07 INF] Received HTTP response headers after 162.868ms - 200
+[17:26:07 INF] End processing HTTP request after 163.1101ms - 200
+[17:26:07 INF] http://192.168.1.62:18186/api/app/gismodel/QueryModelInfo?LightweightName=202308261422300344BIM/GIS轻量化状态:{"code":1,"codeMsg":"查询成功","datas":[{"name":"倾斜摄影(ue)","lightweightName":"202308261422300344","transcodingInfo":"","initiatingUser":"","uniqueCode":"","fileType":"","creationTime":"2023-08-26T14:22:40.76134","executionTime":null,"completionTime":"2023-08-26T14:25:42.795398","priority":203,"modelDownloadUrl":"","modelUploadUrl":"","modelAccessAddress":"http://127.0.0.1:18186/Tools/output/model/202308261422300344/tileset.json","modelUploadSiteAddress":"http://127.0.0.1:18186","otherInfo":"","callbackInterfaceURL":null,"alertMailAddress":null,"sourceFileName":"NYJ1116.zip","lastStatus":null,"status":100,"statusDescription":"轻量化成功","configJson":null,"pointCloudConfigJson":null,"fileOwnership":"OSGB","isNotVerifyFormat":false,"id":3}],"dataCount":0}
+[17:26:07 DBG] Added 0 entity changes to the current audit log
+[17:26:07 DBG] Added 0 entity changes to the current audit log
+[17:26:07 INF] Start processing HTTP request POST http://192.168.1.62:18186/api/app/model/syncdbtodatabase
+[17:26:07 INF] Sending HTTP request POST http://192.168.1.62:18186/api/app/model/syncdbtodatabase
+[17:26:07 INF] Received HTTP response headers after 62.1109ms - 200
+[17:26:07 INF] End processing HTTP request after 62.2657ms - 200
+[17:26:07 INF] http://192.168.1.62:18186/api/app/model/syncdbtodatabase同步数据{"code":0,"codeMsg":"此db文件不存在,请确认","datas":null,"dataCount":0}
+[17:26:07 INF] Start processing HTTP request POST http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261442552747
+[17:26:07 INF] Sending HTTP request POST http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261442552747
+[17:26:07 INF] Received HTTP response headers after 77.8451ms - 200
+[17:26:07 INF] End processing HTTP request after 78.4179ms - 200
+[17:26:07 INF] http://192.168.1.62:18186/api/app/model/query-model-info?LightweightName=202308261442552747BIM/GIS轻量化状态:{"code":1,"codeMsg":"查询成功","datas":[{"name":"房建模型(ue)","lightweightName":"202308261442552747","lastStatus":0,"status":100,"statusDescription":"轻量化成功","taskCode":"","transcodingInfo":null,"initiatingUser":"","uniqueCode":"","fileType":"rvt","softwareType":"Revit","dataVersion":"2016","fileSize":275165,"creationTime":"2023-08-26T14:43:09.02841","executionTime":"2023-08-26T14:58:13.213188","completionTime":"2023-08-26T14:58:18.185668","priority":203,"modelDownloadUrl":"","modelUploadUrl":"","modelUploadSiteAddress":"http://127.0.0.1:18186","mD5":null,"otherInfo":"","callbackInterfaceURL":null,"alertMailAddress":null,"modelAccessAddress":"http://127.0.0.1:18186/Tools/output/model/202308261442552747/root.glt","dbSyncSt

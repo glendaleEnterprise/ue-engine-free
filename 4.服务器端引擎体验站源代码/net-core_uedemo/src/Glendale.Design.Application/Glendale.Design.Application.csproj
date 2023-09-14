@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Glendale.Design</RootNamespace>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FakesAssemblies\**" />
+    <EmbeddedResource Remove="FakesAssemblies\**" />
+    <None Remove="FakesAssemblies\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glendale.Design.Application.Caching\Glendale.Design.Application.Caching.csproj" />
+    <ProjectReference Include="..\Glendale.Design.Core\Glendale.Design.Core.csproj" />
+    <ProjectReference Include="..\Glendale.Design.Domain\Glendale.Design.Domain.csproj" />
+    <ProjectReference Include="..\Glendale.Design.Application.Contracts\Glendale.Design.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Glendale.Design.EntityFrameworkCore\Glendale.Design.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ce.office.extension" Version="2.0.0" />
+    <PackageReference Include="net.sf.mpxj-for-csharp" Version="10.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Spire.Doc" Version="9.12.12" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.Http" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="4.4.4" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="4.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
+  </ItemGroup>
+
+</Project>

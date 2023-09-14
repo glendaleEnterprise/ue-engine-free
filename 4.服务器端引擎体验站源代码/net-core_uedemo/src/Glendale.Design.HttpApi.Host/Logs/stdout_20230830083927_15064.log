@@ -1,0 +1,357 @@
+[16:39:31 INF] Starting Glendale.Design.HttpApi.Host.
+[16:39:41 INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[16:39:41 INF] Loaded ABP modules:
+[16:39:41 INF] - Glendale.Design.DesignHttpApiHostModule
+[16:39:41 INF]   - Glendale.Design.DesignHttpApiModule
+[16:39:41 INF]     - Glendale.Design.DesignApplicationContractsModule
+[16:39:41 INF]       - Glendale.Design.DesignDomainSharedModule
+[16:39:41 INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+[16:39:41 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+[16:39:41 INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+[16:39:41 INF]           - Volo.Abp.Validation.AbpValidationModule
+[16:39:41 INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+[16:39:41 INF]             - Volo.Abp.Localization.AbpLocalizationModule
+[16:39:41 INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+[16:39:41 INF]               - Volo.Abp.Settings.AbpSettingsModule
+[16:39:41 INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+[16:39:41 INF]                 - Volo.Abp.Security.AbpSecurityModule
+[16:39:41 INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+[16:39:41 INF]                   - Volo.Abp.Data.AbpDataModule
+[16:39:41 INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+[16:39:41 INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+[16:39:41 INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+[16:39:41 INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+[16:39:41 INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+[16:39:41 INF]           - Volo.Abp.Features.AbpFeaturesModule
+[16:39:41 INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+[16:39:41 INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+[16:39:41 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+[16:39:41 INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+[16:39:41 INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+[16:39:41 INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+[16:39:41 INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+[16:39:41 INF]             - Volo.Abp.EventBus.AbpEventBusModule
+[16:39:41 INF]               - Volo.Abp.Json.AbpJsonModule
+[16:39:41 INF]                 - Volo.Abp.Timing.AbpTimingModule
+[16:39:41 INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+[16:39:41 INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+[16:39:41 INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+[16:39:41 INF]               - Volo.Abp.Auditing.AbpAuditingModule
+[16:39:41 INF]                 - Volo.Abp.Threading.AbpThreadingModule
+[16:39:41 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+[16:39:41 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+[16:39:41 INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+[16:39:41 INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+[16:39:41 INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+[16:39:41 INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+[16:39:41 INF]             - Volo.Abp.Http.AbpHttpModule
+[16:39:41 INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+[16:39:41 INF]               - Volo.Abp.Minify.AbpMinifyModule
+[16:39:41 INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+[16:39:41 INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+[16:39:41 INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+[16:39:41 INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+[16:39:41 INF]             - Volo.Abp.UI.AbpUiModule
+[16:39:41 INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+[16:39:41 INF]           - Volo.Abp.Application.AbpDddApplicationModule
+[16:39:41 INF]             - Volo.Abp.Domain.AbpDddDomainModule
+[16:39:41 INF]               - Volo.Abp.Guids.AbpGuidsModule
+[16:39:41 INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+[16:39:41 INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+[16:39:41 INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+[16:39:41 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+[16:39:41 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+[16:39:41 INF]   - Glendale.Design.DesignApplicationModule
+[16:39:41 INF]     - Glendale.Design.DesignDomainModule
+[16:39:41 INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+[16:39:41 INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+[16:39:41 INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+[16:39:41 INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+[16:39:41 INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+[16:39:41 INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+[16:39:41 INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+[16:39:41 INF]         - Volo.Abp.Caching.AbpCachingModule
+[16:39:41 INF]           - Volo.Abp.Serialization.AbpSerializationModule
+[16:39:41 INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+[16:39:41 INF]         - Volo.Abp.Users.AbpUsersDomainModule
+[16:39:41 INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+[16:39:41 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+[16:39:41 INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+[16:39:41 INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+[16:39:41 INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+[16:39:41 INF]       - Volo.Abp.BlobStoring.AbpBlobStoringModule
+[16:39:41 INF]       - Volo.Abp.Emailing.AbpEmailingModule
+[16:39:41 INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+[16:39:41 INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+[16:39:41 INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+[16:39:41 INF]     - Glendale.Design.DesignCoreModule
+[16:39:41 INF]       - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+[16:39:41 INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+[16:39:41 INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+[16:39:41 INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+[16:39:41 INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+[16:39:41 INF]   - Glendale.Design.EntityFrameworkCore.DesignEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+[16:39:41 INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+[16:39:41 INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+[16:39:41 INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+[16:39:41 INF]   - Glendale.Design.EntityFrameworkCore.DesignModelEntityFrameworkCoreModule
+[16:39:41 INF]   - Volo.Abp.Autofac.AbpAutofacModule
+[16:39:41 INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+[16:39:41 INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+[16:39:41 INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+[16:39:41 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+[16:39:41 INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+[16:39:41 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+[16:39:41 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+[16:39:41 INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+[16:39:41 INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+[16:39:41 INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+[16:39:41 INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+[16:39:41 INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+[16:39:41 INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+[16:39:41 INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+[16:39:41 INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+[16:39:41 INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+[16:39:41 INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+[16:39:41 INF]   - Volo.Abp.BlobStoring.FileSystem.AbpBlobStoringFileSystemModule
+[16:39:41 DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+[16:39:41 DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+[16:39:41 DBG] Started background worker: Glendale.Design.Jobs.ModelStateCheckerWorker
+[16:39:41 DBG] Started background worker: Glendale.Design.Jobs.CADStateCheckerWorker
+[16:39:41 INF] Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f
+[16:39:43 INF] Using the default authentication scheme Identity.Application for IdentityServer
+[16:39:43 DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+[16:39:43 DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+[16:39:43 DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+[16:39:43 DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+[16:39:43 DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+[16:39:43 DBG] sharding core starting......
+[16:39:43 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  start init......
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+      FROM information_schema.tables
+      WHERE table_type = 'BASE TABLE' AND table_schema = 'ueDemoData_Model'
+[16:39:47 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineFlatten'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'Combine' has a global query filter defined and is the required end of a relationship with the entity 'CombineLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'Document' has a global query filter defined and is the required end of a relationship with the entity 'DocumentLog'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'DocumentVersion' has a global query filter defined and is the required end of a relationship with the entity 'DocumentVerThan'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'Message' has a global query filter defined and is the required end of a relationship with the entity 'MessageReceive'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolder'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'IdentityUser' has a global query filter defined and is the required end of a relationship with the entity 'ProjectFolderUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 WRN] Entity 'Project' has a global query filter defined and is the required end of a relationship with the entity 'ProjectUser'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+[16:39:47 DBG] Glendale.Design.EntityFrameworkCore.DesignModelDbContext  complete init
+[16:39:47 INF] Initialized all ABP modules.
+[16:39:47 INF] Application started. Press Ctrl+C to shut down.
+[16:39:47 INF] Hosting environment: Development
+[16:39:47 INF] Content root path: D:\最新版一键安装包\github\源码\服务器端引擎示例demo源码\net-core_uedemo\src\Glendale.Design.HttpApi.Host
+[16:39:47 INF] Request starting HTTP/1.1 GET http://localhost:44310/ - -
+[16:39:48 DBG] Login Url: /Account/Login
+[16:39:48 DBG] Login Return Url Parameter: ReturnUrl
+[16:39:48 DBG] Logout Url: /Account/Logout
+[16:39:48 DBG] ConsentUrl Url: /Consent
+[16:39:48 DBG] Consent Return Url Parameter: returnUrl
+[16:39:48 DBG] Error Url: /Account/Error
+[16:39:48 DBG] Error Id Parameter: errorId
+[16:39:48 INF] Executing endpoint 'Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host)'
+[16:39:48 INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Glendale.Design.Controllers.HomeController (Glendale.Design.HttpApi.Host).
+[16:39:48 INF] Executing RedirectResult, redirecting to /swagger.
+[16:39:48 INF] Executed action Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host) in 23.0113ms
+[16:39:48 INF] Executed endpoint 'Glendale.Design.Controllers.HomeController.Index (Glendale.Design.HttpApi.Host)'
+[16:39:48 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger - -
+[16:39:48 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/index.html - -
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger - - - 301 - - 10.7082ms
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/ - - - 302 - - 863.2035ms
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/index.html - - - 200 - text/html;charset=utf-8 71.5701ms
+[16:39:48 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/swagger-ui.css - -
+[16:39:48 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/ui/abp.js - -
+[16:39:48 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/ui/abp.swagger.js - -
+[16:39:48 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/swagger-ui-bundle.js - -
+[16:39:48 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/swagger-ui-standalone-preset.js - -
+[16:39:48 INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+[16:39:48 INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/ui/abp.js - - - 200 3025 application/javascript 19.3574ms
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/ui/abp.swagger.js - - - 200 1026 application/javascript 18.1977ms
+[16:39:48 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[16:39:48 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[16:39:48 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/swagger-ui.css - - - 200 143410 text/css 56.2670ms
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 60.9021ms
+[16:39:48 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/swagger-ui-bundle.js - - - 200 1097461 application/javascript 87.5161ms
+[16:39:49 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/v1/swagger.json - -
+[16:39:49 INF] Request starting HTTP/1.1 GET http://localhost:44310/swagger/favicon-32x32.png - -
+[16:39:49 INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[16:39:49 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/favicon-32x32.png - - - 200 628 image/png 6.4693ms
+[16:39:49 INF] Request finished HTTP/1.1 GET http://localhost:44310/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 584.2520ms
+[16:40:31 INF] Request starting HTTP/1.1 OPTIONS http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[16:40:31 INF] CORS policy execution successful.
+[16:40:31 INF] Request finished HTTP/1.1 OPTIONS http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 12.5945ms
+[16:40:31 INF] Request starting HTTP/1.1 GET http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[16:40:31 INF] CORS policy execution successful.
+[16:40:31 ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'System.String'.
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilderAbpJwtTokenMiddlewareExtension.<>c__DisplayClass0_0.<<UseJwtTokenMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Volo.Abp.AspNetCore.Tracing.AbpCorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[16:40:31 ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'System.String'.
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilderAbpJwtTokenMiddlewareExtension.<>c__DisplayClass0_0.<<UseJwtTokenMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Volo.Abp.AspNetCore.Tracing.AbpCorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[16:40:31 INF] Request finished HTTP/1.1 GET http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 500 - text/plain 165.4565ms
+[16:40:51 INF] Request starting HTTP/1.1 OPTIONS http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[16:40:51 INF] CORS policy execution successful.
+[16:40:51 INF] Request finished HTTP/1.1 OPTIONS http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 1.3284ms
+[16:40:51 INF] Request starting HTTP/1.1 GET http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[16:40:51 INF] CORS policy execution successful.
+[16:40:51 ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+[16:40:51 ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilderAbpJwtTokenMiddlewareExtension.<>c__DisplayClass0_0.<<UseJwtTokenMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Volo.Abp.AspNetCore.Tracing.AbpCorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[16:40:51 INF] Request finished HTTP/1.1 GET http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 500 - text/plain 8.1344ms
+[16:44:26 INF] Request starting HTTP/1.1 OPTIONS http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[16:44:26 INF] CORS policy execution successful.
+[16:44:26 INF] Request finished HTTP/1.1 OPTIONS http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - - - 204 - - 1.7042ms
+[16:44:26 INF] Request starting HTTP/1.1 GET http://localhost:44310/api/app/project/3a0abfce-3b33-6958-4cb0-d6b14b8e3250 - -
+[16:44:26 INF] CORS policy execution successful.
+[16:44:26 ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'System.String'.
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilderAbpJwtTokenMiddlewareExtension.<>c__DisplayClass0_0.<<UseJwtTokenMiddleware>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Volo.Abp.AspNetCore.Tracing.AbpCorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[16:44:26 ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'System.String'.
+ ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+ 

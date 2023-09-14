@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = Glendale.Design
+build_property.ProjectDir = D:\最新版一键安装包\github\源码\UeEngine(Free)\4.服务器端引擎体验站源代码\net-core_uedemo\src\Glendale.Design.HttpApi\
